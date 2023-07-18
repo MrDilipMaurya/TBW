@@ -1,0 +1,600 @@
+@import "https://fonts.googleapis.com/css?family=Roboto Mono";
+
+body {
+    font-family: 'Roboto Mono';
+}
+
+#hero {
+    background-color: #17181C;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url('../../public/assets/img/hero-img.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 27%;
+}
+
+.hero .content {
+    margin-bottom: 4.125rem;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: #fff;
+}
+
+.hero p {
+    color: #98A1B1;
+    font-weight: 500;
+    font-size: 1.5625rem;
+}
+
+
+.hero .btn {
+    padding: 0.625rem 2.5rem;
+    background-color: #0174F3;
+    border-radius: 2.5rem;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+
+.hero .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* review */
+
+#review {
+    padding-bottom: 8.9375rem;
+    background-color: #17181C;
+}
+
+.review-box {
+    padding: 6.1875rem 4.5rem;
+    border-radius: 1.5625rem;
+    background: linear-gradient(261.69deg, rgba(52, 193, 255, 0.47) 0.78%, rgba(69, 74, 255, 0.47) 50.91%, rgba(39, 184, 255, 0.47) 100%);
+}
+
+.review-box .review-1 p {
+    padding: 1.625rem 0;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+}
+
+.review-box .review-1 .client p {
+    padding: 0;
+}
+
+.review-box .review-1 .client h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    color: white;
+}
+
+#cs-studies {
+    background-color: #17181C;
+    padding-bottom: 5.1875rem;
+
+}
+
+#cs-studies .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#cs-studies .title .btn a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #0174F3;
+}
+
+#cs-studies .title h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+}
+
+#cs-studies .project-sol  {
+    margin: 5.1875rem 0;
+    padding-top: 5.1875rem;
+}
+
+#cs-studies .project-sol .card {
+    background-color: #1D1F25;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#cs-studies .project-sol .card-body {
+    background-color: #1D1F25;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#cs-studies .project-sol .card .card-img-top {
+    height: 21.875rem;
+
+}
+
+#cs-studies .project-sol .card img {
+    background-color: white;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+#cs-studies .project-sol .card .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+}
+
+#cs-studies .project-sol .card .card-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 22px 0 39px 0;
+}
+
+#cs-studies .project-sol .card .stats {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cs-studies .project-sol .card .stats h3 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+#cs-studies .project-sol .card .stats h4 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#tech{
+    background-color: #17181C;
+    padding-bottom: 8.9375rem;
+}
+#tech .text-container {
+    margin-bottom: 5.1875rem;
+    text-align: center;
+}
+
+#tech .text-container h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    color: #FFFFFF;
+}
+
+#tech .text-container p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-top: 2.1875rem;
+    color: #FFFFFF;
+}
+
+#tech .tech-box {
+    padding-bottom: 44px;
+}
+
+#tech .tech-box:last-child {
+    padding-bottom: 0;
+}
+
+#tech .tech-box h5 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+
+    color: #FFFFFF;
+}
+
+#tech .tech-box .tech-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 4rem;
+}
+
+#tech .tech-box p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+
+#cta{
+    background-color: #17181C;
+    padding-bottom: 8.9375rem;
+}
+.cta {
+    margin: 8.9375rem 0;
+}
+
+#cta .cta-box {
+    padding: 6.25rem 3.125rem;
+    border-radius: 1.5625rem;
+    background: linear-gradient(261.69deg, rgba(52, 193, 255, 0.47) 0.78%, rgba(69, 74, 255, 0.47) 50.91%, rgba(39, 184, 255, 0.47) 100%);
+
+}
+
+#cta .cta-box h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+
+    color: #FFFFFF;
+
+}
+
+#cta .cta-box .btn {
+    padding: .9375rem 1.4375rem;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    color: #17181C;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.8125rem;
+}
+
+#tech-stack {
+    background-color: #17181C;
+    padding-bottom: 8.9375rem;
+}
+
+#tech-stack .text-box{
+    text-align: center;
+    color: #fff;
+}
+#tech-stack .text-box h5 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    margin-bottom: 2.625rem;
+}
+
+#tech-stack .text-box p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#tech-stack .text-box h4 {
+    font-weight: 700;
+    font-size: 1.6875rem;
+    line-height: 2.25rem;
+    margin-top: 6.9375rem;
+
+}
+
+#tech-stack .techs .image-container
+{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto auto auto;
+    place-items: center;
+    margin-top: 4.8125rem;
+    margin-bottom: 5.625rem;
+}
+
+#tech-stack .techs .image-container img{
+    padding: 1.25rem 2.25rem;
+    border-radius: 15px;
+}
+
+#tech-stack .techs .image-container img.selected{
+    background: #D7EAFF;
+}
+
+
+#tech-stack .techs .image-container img:hover{
+    background: #D7EAFF;
+}
+
+#tech-stack .techs .description-container
+{
+    text-align: center; color: white;
+}
+
+#tech-stack .techs .description-container p{
+    margin: 1.5rem 0;
+}
+
+#tech-stack .techs .description-container a
+{
+   text-decoration: none;
+}
+
+#testimonials {
+    background-color: #17181C;
+    padding-bottom: 13.8125rem;
+}
+
+#testimonials .title h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    margin-bottom: 6.4375rem;
+text-align: center;
+}
+
+#testimonials  .testimonial-boxes .card {
+    background-color: #D7EAFF;
+}
+
+#testimonials  .testimonial-boxes .card-body {
+    padding: 1.875rem;
+}
+
+#testimonials  .testimonial-boxes .card .card-title {
+    color: #000;
+}
+
+#testimonials  .testimonial-boxes .card .card-title h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    line-height: 26px;
+}
+
+#testimonials  .testimonial-boxes .card .card-title p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+
+}
+
+#testimonials  .testimonial-boxes .card .card-title {
+
+    margin: 0;
+}
+
+#testimonials  .testimonial-boxes .card .card-text {
+    margin: 0;
+}
+
+#testimonials  .testimonial-boxes .card .card-text p {
+    margin: 0;
+}
+
+#testimonials  .testimonial-boxes .card .card-text .star {
+    padding: 2.25rem 0 1.9375rem 0;
+}
+
+#testimonials  .testimonial-boxes .card .stats {
+    color: white;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#testimonials  .testimonial-boxes .card .stats h3 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+#testimonials  .testimonial-boxes .card .stats h4 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+@media (max-width:48rem) {
+    .hero {
+        height: auto;
+
+        background: #17181C;
+    }
+
+    .hero h1 {
+        font-weight: 700;
+        font-size: 1.875rem;
+        color: #fff;
+    }
+
+    .hero p {
+        color: #98A1B1;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .hero a {
+        display: block;
+        text-align: center;
+    }
+
+    .hero .content {
+        margin: 4.125rem 0;
+    }
+
+    .hero .btn {
+        padding: 0.625rem 1.375rem;
+        font-size: 1.25rem;
+        margin-bottom: 4.125rem;
+    }
+
+    #review {
+        padding-bottom: 4.6875rem;
+
+    }
+
+    .review-box {
+        padding: 2.5rem;
+        text-align: center;
+    }
+
+    .review-box .col-md-4 {
+        border-bottom: 1px solid #D7EAFF;
+        margin: .625rem 0;
+    }
+    #cs-studies{
+    padding-bottom: 2.625rem;
+
+    }
+    #cs-studies .title {
+        display: block;
+    }
+
+    #cs-studies .title h3 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    #cs-studies .title .btn {
+        padding: 0;
+    }
+
+
+    #cs-studies .project-sol  {
+        margin: 0;
+        padding-top: 4.6875rem;
+    }
+    .swiper-pagination-bullet {
+        width: 20px;
+    }
+
+    #tech {
+        padding: 0;
+    }
+
+    #tech .text-container {
+        margin-bottom: 2.5rem;
+    }
+
+    #tech .text-container h3 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    #tech .text-container p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-top: 2.1875rem;
+        color: #FFFFFF;
+    }
+
+    #tech .tech-box {
+        padding-bottom: 1.375rem;
+    }
+
+    #tech .tech-box .tech-name {
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    #tech .tech-box .tech-name img{
+        margin-left: 1rem;
+    }
+
+    #tech .tech-box h5 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        text-align: left !important;
+    }
+
+    #cta {
+        padding: 2.5rem 0;
+    }
+
+    #cta .cta-box {
+        padding: 2.5rem;
+    }
+
+    #cta .cta-box h3 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        text-align: center;
+    }
+
+    #cta .cta-box a {
+        display: block;
+        text-align: center;
+    }
+
+    #cta .cta-box .btn {
+        padding: 0.625rem 1rem;
+        font-size: 1rem;
+        margin-bottom: 0;
+        margin-top: .75rem;
+    }
+
+    #tech-stack {
+        padding-bottom: 2.5rem;
+    }
+
+    #tech-stack .text-box h5 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-bottom: 2.625rem;
+    }
+
+    #tech-stack .text-box p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    #tech-stack .text-box h4 {
+        font-weight: 700;
+        font-size: 1.6875rem;
+        line-height: 2.25rem;
+        margin-top: 3.4375rem;
+    
+    }
+
+    #tech-stack .techs .image-container
+{
+    display: flex;
+    overflow-x: scroll;
+}
+    
+
+    #testimonials .title h3 {
+        font-size: 1.25rem;
+        line-height: 32px;
+        margin-bottom: 2.5rem;
+    }
+
+    .testimonials {
+        margin-bottom: 2.5rem;
+    }
+
+
+}

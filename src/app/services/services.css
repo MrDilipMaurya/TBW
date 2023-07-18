@@ -1,0 +1,857 @@
+@import "https://fonts.googleapis.com/css?family=Roboto Mono";
+
+body {
+    font-family: 'Roboto Mono';
+}
+
+#service-hero{
+height: 100vh;
+}
+#service-hero .secondary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#service-hero .secondary-nav li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #727378;
+}
+
+#service-hero .secondary-nav li a.active {
+
+    color: #0174F3;
+}
+
+#service-hero .hero-box {
+    margin: 3.75rem 0;
+}
+
+#service-hero .hero-box p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #0174F3;
+}
+
+#service-hero .hero-box h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 66px;
+    text-align: center;
+
+    color: #17181C;
+}
+
+#service-hero .hero-box h5 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+
+    color: #727378;
+}
+
+#digital {
+    /* margin-bottom: 7.125rem; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digital h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+#digital .description p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+#digital .description p:last-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+
+#digital .box-container .line {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.25rem;
+    place-content: end;
+}
+
+#digital .box-container .box {
+    height: 183px;
+    width: 173px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid #0174F3;
+    /* padding: 2.625rem 2.6875rem 3.1875rem 2.6875rem; */
+    border-radius: .5rem;
+}
+
+#digital .box-container .box h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 2.1875rem;
+    color: #000000;
+}
+
+#ai-development {
+    background-color: #EDF6FF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ai-development h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+#ai-development .description p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+#ai-development .description p:last-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+#ai-development .box-container .line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#ai-development .box-container .box .icon {
+    margin-right: 1.25rem;
+}
+
+#ai-development .box-container .box {
+    border: 1px solid #0174F3;
+    padding: 1.5625rem 1.25rem;
+    border-radius: .5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    margin-bottom: 1.25rem;
+    width: 14.1875rem;
+}
+
+#ai-development .box-container .box h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+#web-development {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#web-development h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+#web-development .description p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+#web-development .description p:last-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+#web-development .box-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#web-development .box-container .line {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    place-content: end;
+}
+
+#web-development .box-container .box .icon {
+    margin-right: 1.25rem;
+}
+
+#web-development .box-container .box {
+    border: 1px solid #0174F3;
+    /* padding: 1.5625rem 1.25rem; */
+    padding: 0 1.25rem;
+    border-radius: .5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    width: 14.1875rem;
+    height: 5.8125rem;
+}
+
+#web-development .box-container .box h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+#agile-development {
+    background-color: #EDF6FF;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#agile-development h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+#agile-development .description p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+#agile-development .description p:last-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+#agile-development .box-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#agile-development .box-container .line {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    place-content: end;
+}
+
+#agile-development .box-container .box .icon {
+    margin-right: 1.25rem;
+}
+
+#agile-development .box-container .box {
+    border: 1px solid #0174F3;
+    padding: 0 1.25rem;
+    border-radius: .5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    width: 14.1875rem;
+    height: 5.8125rem;
+}
+
+#agile-development .box-container .box h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+
+#webthree {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#webthree h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+#webthree .description p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+#webthree .description p:last-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+#webthree .box-container .line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#webthree .box-container .box .icon {
+    margin-right: 1.25rem;
+}
+
+#webthree .box-container .box {
+    border: 1px solid #0174F3;
+    padding: 0 1.25rem;
+    border-radius: .5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    margin-bottom: 1.25rem;
+    width: 18.625rem;
+    height: 5.8125rem;
+}
+
+#webthree .box-container .box h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+
+#data-engineering {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #EDF6FF;
+    align-items: center;
+}
+
+#data-engineering h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+#data-engineering .description p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+#data-engineering .description p:last-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+
+#data-engineering .box-container .line {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.25rem;
+    place-content: start;
+}
+
+#data-engineering .box-container .box {
+    border: 1px solid #0174F3;
+    background-color: white;
+    width: 10.8125rem;
+    height: 11.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+#data-engineering .box-container .box h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 2.1875rem;
+    color: #000000;
+}
+
+#app-modernisation {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-modernisation h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+#app-modernisation .description p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+#app-modernisation .description p:last-child {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+#app-modernisation .box-container {
+    align-content: right;
+}
+
+#app-modernisation .box-container .line {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: end;
+}
+
+#app-modernisation .box-container .box {
+    border: 1px solid #0174F3;
+    background-color: white;
+    width: 10.8125rem;
+    height: 11.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+#app-modernisation .box-container .box h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 2.1875rem;
+    color: #000000;
+}
+
+#referrals {
+    height: 100vh;
+    background-color: #EDF6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#referrals .referral-box {
+    background-color: #17181C;
+    padding: 5.75rem 6.25rem;
+    border-radius: 1.5625rem;
+}
+
+#referrals .referral-box h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+
+    color: #FFFFFF;
+}
+
+#referrals .referral-box .description p:first-child {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    margin: 3.0625rem 0;
+    color: #98A1B1;
+}
+
+#referrals .referral-box .description p:last-child {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+#trusted-by {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#trusted-by h3 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 66px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+#trusted-by p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+    margin-bottom: 84px;
+    color: #727378;
+}
+
+
+#trusted-by .client-image{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 20px;
+    place-items: center;
+}
+
+#trusted-by img {
+    height: 68px;
+    width: 264px;
+
+}
+
+@media (max-width:48rem) {
+    .service-hero .secondary-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+        margin-top: 1.875rem;
+        text-align: left;
+        list-style-type: none;
+
+    }
+
+    .service-hero .secondary-nav li {
+        margin-bottom: .625rem;
+    }
+
+    .service-hero .hero-box {
+        margin: 3.5625rem 0;
+    }
+
+    .service-hero .hero-box h2 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    .service-hero .hero-box h5 {
+        font-size: 1.25rem;
+        line-height: 32px;
+    }
+
+    #digital {
+        margin-bottom: 3.375rem;
+        height: auto;
+    }
+
+    #digital h3 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    #digital .description p:first-child,
+    #digital .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    #digital .box-container .line {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+    }
+
+    #digital .box-container .box {
+        height: 183px;
+        width: auto;
+    }
+
+    #ai-development {
+        height: auto;
+        margin-bottom: 3.375rem;
+        padding: 3.375rem 0;
+    }
+
+    #ai-development h3 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    #ai-development .description p:first-child,
+    #ai-development .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    #web-development {
+        margin-bottom: 3.375rem;
+        height: auto;
+    }
+
+    #web-development h3 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    #web-development .description p:first-child,
+    #web-development .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    #web-development .box-container .line {
+        margin-top: 1.25rem;
+    }
+
+    #web-development .box-container .line .box {
+        padding: 0 16px;
+        width: auto;
+        height: 5.8125rem;
+    }
+
+    #agile-development {
+        height: auto;
+        margin-bottom: 3.375rem;
+        padding: 3.375rem 0;
+    }
+
+    #agile-development h3 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    #agile-development .description p:first-child,
+    #agile-development .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    #agile-development .box-container .line {
+        margin-bottom: 1.25rem;
+    }
+
+    #agile-development .box-container .box {
+        padding: 0 1rem;
+        width: auto;
+        height: 5.8125rem;
+    }
+
+    #webthree {
+        margin-bottom: 3.375rem;
+        height: auto;
+    }
+
+    #webthree h3 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    #webthree .description p:first-child,
+    #webthree .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    #webthree .box-container .line {
+
+        align-items: center;
+    }
+
+    #data-engineering {
+        height: auto;
+        margin-bottom: 3.375rem;
+        padding: 3.375rem 0;
+    }
+
+    #data-engineering h3 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    #data-engineering .description p:first-child,
+    #data-engineering .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    #data-engineering .box-container .line {
+        margin-bottom: 1.25rem;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #data-engineering .box-container .box {
+        padding: 0 1rem;
+        width: auto;
+        height: 11.4375rem;
+    }
+
+    #app-modernisation {
+        margin-bottom: 3.375rem;
+        height: auto;
+    }
+
+    #app-modernisation h3 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+    }
+
+    #app-modernisation .description p:first-child,
+    #app-modernisation .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    #app-modernisation .box-container .line {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.25rem;
+    }
+
+    #app-modernisation .box-container .box {
+        width: auto;
+        height: 11.4375rem;
+    }
+
+    .referrals {
+        height: auto;
+        margin-bottom: 3.375rem;
+        padding: 3.375rem 0;
+    }
+
+    .referrals .referral-box {
+        padding: 20px;
+    }
+
+    .referrals .referral-box h3 {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+
+    .referrals .referral-box .description p:first-child {
+        margin: 25px 0;
+    }
+
+    .referrals .referral-box .description p:first-child,
+    .referrals .referral-box .description p:last-child {
+        font-size: 1.25rem;
+        line-height: 26px;
+    }
+
+    .referrals .referral-box .col-md-4 {
+        text-align: center;
+    }
+
+    .trusted-by {
+        height: auto;
+        margin-bottom: 3.375rem;
+    }
+
+    .trusted-by h3 {
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+    }
+
+    .trusted-by p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-top: 24px;
+        margin-bottom: 42px;
+        color: #727378;
+    }
+
+    .trusted-by .row:nth-child(2) {
+        padding-bottom: 0 !important;
+    }
+}

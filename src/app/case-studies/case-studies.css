@@ -1,0 +1,582 @@
+@import "https://fonts.googleapis.com/css?family=Roboto Mono";
+
+body {
+    font-family: 'Roboto Mono';
+}
+
+#cs-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #17181C;
+}
+
+#cs-hero .back {
+    margin-top: 9.375rem;
+}
+
+#cs-hero .back a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#cs-hero .back a img {
+    margin-right: .625rem;
+}
+
+#cs-hero .back a span {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+
+    color: #0174F3;
+}
+
+#cs-hero .case-box {
+    margin-top: 4.625rem;
+    margin-bottom   : 6.75rem;
+    background: linear-gradient(0deg, rgba(23, 24, 28, 0.5), rgba(23, 24, 28, 0.5)), url('../../../public/assets/img/case-studies-img.jpg');
+    padding: 8.75rem 6.25rem;
+    background-size: cover;
+    border-radius: 1.5625rem;
+}
+
+#cs-hero .case-box h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4.125rem;
+    margin: 2.8125rem 0;
+
+    color: #FFFFFF;
+}
+
+#cs-hero .case-box p {
+    font-weight: 500;
+    font-size: 2.1875rem;
+    line-height: 2.875rem;
+
+    color: #FFFFFF;
+}
+
+#about-case {
+background-color: #17181C;
+padding-bottom: 6.75rem ;
+}
+
+#about-case h4 {
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    color: #FFFFFF;
+}
+
+#about-case p {
+    font-weight: 400;
+    font-size: 1.5625rem;
+    line-height: 2.0625rem;
+    color: #FFFFFF;
+}
+
+#about-case .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#about-case .stat:first-child {
+    margin-top: 0;
+
+}
+
+#about-case .stat {
+    margin-top: 2.9375rem;
+}
+
+#about-case .stat p:first-child {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #0174F3;
+}
+
+#about-case .stat p:last-child {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.15em;
+    margin-top: .75rem;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+#about-case .annual-report-box {
+    margin: 6.75rem 0;
+}
+
+#about-case .annual-report {
+    display: flex;
+    height: 12.5rem;
+    width: 25.0406rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 1.25rem;
+}
+
+#about-case .annual-report h4 {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4.125rem;
+    color: #000000;
+}
+
+#about-case .annual-report p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: #000000;
+}
+
+#challenges {
+    padding-bottom: 6.75rem;
+background-color: #17181C;
+
+}
+
+#challenges h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    color: #FFFFFF;
+}
+
+#challenges p {
+    font-weight: 400;
+    font-size: 1.5625rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+}
+
+#challenges p:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 2.1875rem;
+    line-height: 3.125rem;
+    color: #FFFFFF;
+}
+
+#partnership{
+    padding-bottom: 6.75rem;
+    background-color: #17181C;
+
+}
+
+#partnership h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    color: #98A1B1;
+}
+
+#partnership p {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.4375rem;
+    /* or 138% */
+
+
+    color: #FFFFFF;
+}
+
+#before-after {
+    padding-bottom: 6.75rem;    
+    background-color: #17181C;
+
+}
+
+#before-after .before h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    /* identical to box height */
+
+
+    color: #FF3D2E;
+}
+
+#before-after .before p {
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 3.4375rem;
+    /* or 183% */
+
+
+    color: #FFFFFF;
+
+}
+
+#before-after .after h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    /* identical to box height */
+
+
+    color: #ffffff;
+}
+
+#before-after .after p {
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 3.4375rem;
+    /* or 183% */
+
+
+    color: #FFFFFF;
+
+}
+
+#image {
+    background-color: #17181C;
+    padding-bottom: 6.75rem;
+
+}
+
+#image .bg-image {
+    height: 48.5rem;
+    /* width: 1438px; */
+    left: 9.625rem;
+    border-radius: 1.5625rem;
+    background-size: cover;
+    background-image: url(../../../public/assets/img/bg-image-case-studies.jpg);
+
+}
+
+#hand-picked {
+    background-color: #17181C;
+    padding-bottom: 6.75rem;
+}
+
+#hand-picked h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4.125rem;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#hand-picked h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+
+    color: #FFFFFF;
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem;
+}
+
+#hand-picked .our-field {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#hand-picked .our-field li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    color: #0174F3;
+}
+
+#our-partnership {
+    background-color: #17181C;
+    padding-bottom: 6.75rem;
+}
+
+#our-partnership h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    color: #FFFFFF;
+}
+
+#our-partnership p {
+    font-weight: 400;
+    font-size: 1.5625rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+}
+
+#our-partnership p:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 2.1875rem;
+    line-height: 3.125rem;
+    color: #FFFFFF;
+}
+
+#case-cta {
+    background-color: #17181C;
+
+    padding-bottom: 11.625rem;
+}
+
+#case-cta .cta-box {
+    padding: 5.625rem 5.9375rem;
+    border-radius: 1.5625rem;
+    background: linear-gradient(261.69deg, rgba(52, 193, 255, 0.47) 0.78%, rgba(69, 74, 255, 0.47) 50.91%, rgba(39, 184, 255, 0.47) 100%);
+
+}
+
+#case-cta .cta-box p {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+
+    color: #FFFFFF;
+
+}
+
+#case-cta .cta-box a {
+    
+    padding: 1.1875rem 1.875rem;
+    background-color: #fff;
+    border-radius: 1.5625rem;
+    color: #17181C;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6875rem;
+    line-height: 2.1875rem;
+    text-decoration: none;
+}
+
+#case-cta .cta-box .btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 6.5625rem;
+}
+
+@media (max-width:48rem) {
+    #cs-hero .case-box {
+        margin-top: 2.5rem;
+        background: linear-gradient(0deg, rgba(23, 24, 28, 0.5), rgba(23, 24, 28, 0.5)), url(../../../public/assets/img/case-studies-img.jpg);
+        padding: 1.25rem;
+        background-position: center center;
+    }
+
+    #cs-hero .case-box h2 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+        margin: 1.25rem 0;
+    }
+
+    #cs-hero .case-box p {
+        font-size: 1.0938rem;
+        line-height: 1.4375rem;
+    }
+
+    #about-case {
+        padding: 3.375rem 0;
+    }
+
+    #about-case h4 {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+
+    #about-case p {
+        font-size: 1.0938rem;
+        line-height: 1.4375rem;
+    }
+
+    #about-case .stats {
+        align-items: start;
+        text-align: left;
+    }
+
+    #about-case .stat {
+        margin-top: 1.25rem;
+    }
+
+    #about-case .annual-report-box {
+        margin: 3.375rem 0;
+    }
+
+    #about-case .annual-report {
+        display: flex;
+        height: 12.5rem;
+        width: auto;
+        margin-bottom: 1.25rem;
+    }
+
+
+
+
+
+    #about-case .annual-report h4 {
+        font-size: 1.5625rem;
+
+    }
+
+    #challenges {
+        padding-bottom: 3.375rem;
+
+    }
+
+    #challenges h4 {
+        font-size: 1.875rem;
+    }
+
+    #challenges p {
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
+    }
+
+    #challenges p:nth-of-type(2) {
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+    }
+
+    #partnership{
+        padding-bottom: 3.375rem;
+
+    }
+
+    #partnershiph4 {
+        font-size: 1.875rem;
+    }
+
+    #partnershipp {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    #before-after {
+        padding-bottom: 3.375rem;
+
+    }
+
+    #before-after .before h4 {
+        font-size: 1.875rem;
+        line-height: 3.3125rem;
+    }
+
+    #before-after .before p {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+
+    }
+
+    #before-after .col-md-2 {
+        display: none;
+    }
+
+    #before-after .after h4 {
+        font-size: 1.875rem;
+        line-height: 3.3125rem;
+    }
+
+    #before-after .after p {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+
+    }
+
+    #image {
+        padding-bottom: 3.375rem;
+
+    }
+
+    #image .bg-image {
+        height: 200px;
+        border-radius: 1.5625rem;
+        background-size: cover;
+        background-image: url(../../../public/assets/img/bg-image-case-studies.jpg);
+
+    }
+
+    #hand-picked {
+        padding-bottom: 3.375rem;
+
+    }
+
+    #hand-picked h2 {
+        font-size: 1.5625rem;
+        line-height: 2.1875rem;
+    }
+
+    #hand-picked h3 {
+        font-size: 1.25rem;
+        line-height: 3.3125rem;
+
+        color: #FFFFFF;
+        margin: 1.25rem 0;
+    }
+
+    #hand-picked .our-field {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #hand-picked .our-field li a {
+        font-size: 1.25rem;
+    }
+
+    #our-partnership {
+        padding-bottom: 3.375rem;
+
+    }
+
+    #our-partnership h4 {
+        font-size: 1.875rem;
+    }
+
+    #our-partnership p {
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
+    }
+
+    #our-partnership p:nth-of-type(2) {
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+    }
+
+    #case-cta {
+        padding-bottom: 5.625rem;
+    }
+
+    #case-cta .cta-box {
+        padding: 1.25rem;
+        border-radius: 1.5625rem;
+        background: linear-gradient(261.69deg, rgba(52, 193, 255, 0.47) 0.78%, rgba(69, 74, 255, 0.47) 50.91%, rgba(39, 184, 255, 0.47) 100%);
+
+    }
+
+    #case-cta .cta-box p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    #case-cta .cta-box .btn a{
+        padding: .625rem .75rem;
+        background-color: #fff;
+        border-radius: 1.5625rem;
+        color: #17181C;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+    #case-cta .cta-box .btn {
+        margin-top: 1.25rem;
+    }
+
+}

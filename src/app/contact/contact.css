@@ -1,0 +1,176 @@
+@import "https://fonts.googleapis.com/css?family=Roboto Mono";
+
+body {
+    font-family: 'Roboto Mono';
+}
+#contact {
+   overflow: hidden;
+}
+
+#contact .col-md-8 {
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 23px;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#contact .col-md-8 .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact .col-md-8 a {
+    text-decoration: none;
+    color: #0174F3;
+}
+
+#contact .col-md-8 a p {
+    margin: 0;
+    padding-left: .625rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+
+}
+
+#contact .col-md-8 .back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .col-md-8 h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    margin: 0;
+    color: #17181C;
+    margin-top: 20px;
+
+}
+
+#contact .col-md-8 form .options{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#contact .col-md-8 form input,#contact .col-md-8 form textarea{
+    margin-bottom: 14px;
+}
+
+#contact .col-md-8 .form-check{
+    min-height: auto;
+    margin-bottom: 0;
+}
+#contact .col-md-8 .form-check label {
+    font-weight: 400;
+    font-size: .9375rem;
+    line-height: 1.25rem;
+    color: #17181C;
+}
+
+#contact .col-md-8 .form-text {
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    color: #89888C;
+    letter-spacing: 0.5px;
+}
+
+#contact .col-md-8 .form-control {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    color: #89888C;
+}
+
+#contact .col-md-4 {
+    height: 100vh;
+    background-color: #1D1F25;
+    /* padding:0 9rem; */
+    padding:0 6%;
+
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+}
+
+#contact .col-md-4 h4 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    padding-top: 2.4375rem;
+    padding-bottom: 1.5625rem;
+}
+
+#contact .col-md-4 p span {
+    font-weight: 700;
+
+}
+
+#contact .col-md-4 p {
+    padding-top: 1.625rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: #FFFFFF;
+}
+
+@media (max-width:48rem) {
+    #contact .col-md-8 {
+        height: auto;
+        background-color: white;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+    }
+
+    #contact {
+        height: auto;
+        /* background-color: white; */
+    }
+
+    #contact .col-md-8 .logo {
+        display: block;
+        justify-content: space-between;
+    }
+
+    #contact .col-md-8 .back-btn {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin: 1.25rem 0;
+    }
+
+    #contact .col-md-8 h3 {
+        font-size: 1.5625rem;
+        line-height: 1.75rem;
+        margin: 0;
+        margin: 1.5625rem 0;
+
+    }
+
+    #contact .col-md-8 .form-text {
+        font-weight: 400;
+        font-size: .75rem;
+        line-height: 1rem;
+        letter-spacing: 0.2px;
+    }
+
+    .contact .col-md-4 {
+        background-color: #1D1F25;
+        padding: 2.5rem;
+    }
+}
