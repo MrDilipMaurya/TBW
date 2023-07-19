@@ -1,9 +1,10 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import './case-studies.css'
-import arrowLeft from '../../../public/assets/img/arrow-left.svg'
-import caseBoxLogo from '../../../public/assets/img/enso.png'
+// import './case-studies.css'
+import './cs-studies.css'
+import arrowLeft from '../../public/assets/img/arrow-left.svg'
+import caseBoxLogo from '../../public/assets/img/enso.png'
 import Navbar from '../components/header'
 const CaseStudies = () => {
     const theme = 'dark';

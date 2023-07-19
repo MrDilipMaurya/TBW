@@ -300,8 +300,8 @@ const Work = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="client-image">
-                                {clientImage.map((index) => (
-                                    <img src={index.image} alt="" />
+                                {clientImage.map((item, index) => (
+                                    <img key={index} src={item.image} alt="" />
                                 ))}
                             </div>
                         </div>

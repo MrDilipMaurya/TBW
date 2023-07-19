@@ -3,7 +3,6 @@
 body {
     font-family: 'Roboto Mono';
 }
-
 #cs-hero {
     display: flex;
     justify-content: center;
@@ -36,7 +35,7 @@ background-color: #17181C;
 #cs-hero .case-box {
     margin-top: 4.625rem;
     margin-bottom   : 6.75rem;
-    background: linear-gradient(0deg, rgba(23, 24, 28, 0.5), rgba(23, 24, 28, 0.5)), url('../../../public/assets/img/case-studies-img.jpg');
+    background: linear-gradient(0deg, rgba(23, 24, 28, 0.5), rgba(23, 24, 28, 0.5)), url("../../public/assets/img/case-studies-img.jpg");
     padding: 8.75rem 6.25rem;
     background-size: cover;
     border-radius: 1.5625rem;
@@ -254,7 +253,7 @@ background-color: #17181C;
     left: 9.625rem;
     border-radius: 1.5625rem;
     background-size: cover;
-    background-image: url(../../../public/assets/img/bg-image-case-studies.jpg);
+    background-image: url("../../public/assets/img/bg-image-case-studies.jpg");
 
 }
 
@@ -373,7 +372,7 @@ background-color: #17181C;
     #cs-hero .case-box {
         margin-top: 2.5rem;
         margin-bottom: 0;
-        background: linear-gradient(0deg, rgba(23, 24, 28, 0.5), rgba(23, 24, 28, 0.5)), url(../../../public/assets/img/case-studies-img.jpg);
+        background: linear-gradient(0deg, rgba(23, 24, 28, 0.5), rgba(23, 24, 28, 0.5)), url('../../public/assets/img/case-studies-img.jpg');
         padding: 1.25rem;
         background-position: center center;
     }
@@ -506,7 +505,7 @@ background-color: #17181C;
         height: 200px;
         border-radius: 1.5625rem;
         background-size: cover;
-        background-image: url(../../../public/assets/img/bg-image-case-studies.jpg);
+        background-image: url('../../public/assets/img/bg-image-case-studies.jpg');
 
     }
 

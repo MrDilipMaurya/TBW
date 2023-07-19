@@ -35,41 +35,41 @@ const Contact = () => {
                             <div className="options">
                                 <div className="form-check">
                                     <input className="form-check-input" type="checkbox" value="" id="bdp" />
-                                    <label className="form-check-label" for="bdp">
+                                    <label className="form-check-label" htmlFor="bdp">
                                         Build a Digital Product
                                     </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input" type="checkbox" value="" id="dec" />
-                                    <label className="form-check-label" for="dec">
+                                    <label className="form-check-label" htmlFor="dec">
                                         Develop E-Commerce
                                     </label>
                                 </div>
 
                                 <div className="form-check">
                                     <input className="form-check-input" type="checkbox" value="" id="dbs" />
-                                    <label className="form-check-label" for="dbs">
+                                    <label className="form-check-label" htmlFor="dbs">
                                         Develop Business Solution
                                     </label>
                                 </div>
 
                                 <div className="form-check">
                                     <input className="form-check-input" type="checkbox" value="" id="dw" />
-                                    <label className="form-check-label" for="dw">
+                                    <label className="form-check-label" htmlFor="dw">
                                         Develop Website
                                     </label>
                                 </div>
 
                                 <div className="form-check">
                                     <input className="form-check-input" type="checkbox" value="" id="bma" />
-                                    <label className="form-check-label" for="bma">
+                                    <label className="form-check-label" htmlFor="bma">
                                         Build Mobile App
                                     </label>
                                 </div>
 
                                 <div className="form-check">
                                     <input className="form-check-input" type="checkbox" value="" id="other" />
-                                    <label className="form-check-label" for="other">
+                                    <label className="form-check-label" htmlFor="other">
                                         Other
                                     </label>
                                 </div>
