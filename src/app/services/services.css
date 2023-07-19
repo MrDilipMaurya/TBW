@@ -600,32 +600,36 @@ height: 100vh;
 }
 
 @media (max-width:48rem) {
-    .service-hero .secondary-nav {
+
+    #service-hero{
+        height: auto;
+    }
+    #service-hero .secondary-nav {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         margin: 0;
-        margin-top: 1.875rem;
+        margin-top: 90px;
         text-align: left;
         list-style-type: none;
 
     }
 
-    .service-hero .secondary-nav li {
+    #service-hero .secondary-nav li {
         margin-bottom: .625rem;
     }
 
-    .service-hero .hero-box {
+    #service-hero .hero-box {
         margin: 3.5625rem 0;
     }
 
-    .service-hero .hero-box h2 {
+    #service-hero .hero-box h2 {
         font-size: 1.5625rem;
         line-height: 2.0625rem;
     }
 
-    .service-hero .hero-box h5 {
+    #service-hero .hero-box h5 {
         font-size: 1.25rem;
         line-height: 32px;
     }
@@ -804,46 +808,46 @@ height: 100vh;
         height: 11.4375rem;
     }
 
-    .referrals {
+    #referrals {
         height: auto;
         margin-bottom: 3.375rem;
         padding: 3.375rem 0;
     }
 
-    .referrals .referral-box {
+    #referrals .referral-box {
         padding: 20px;
     }
 
-    .referrals .referral-box h3 {
+    #referrals .referral-box h3 {
         font-size: 1.5rem;
         line-height: 1.875rem;
     }
 
-    .referrals .referral-box .description p:first-child {
+    #referrals .referral-box .description p:first-child {
         margin: 25px 0;
     }
 
-    .referrals .referral-box .description p:first-child,
-    .referrals .referral-box .description p:last-child {
+    #referrals .referral-box .description p:first-child,
+    #referrals .referral-box .description p:last-child {
         font-size: 1.25rem;
         line-height: 26px;
     }
 
-    .referrals .referral-box .col-md-4 {
+    #referrals .referral-box .col-md-4 {
         text-align: center;
     }
 
-    .trusted-by {
+    #trusted-by {
         height: auto;
         margin-bottom: 3.375rem;
     }
 
-    .trusted-by h3 {
+    #trusted-by h3 {
         font-size: 1.5625rem;
         line-height: 1.875rem;
     }
 
-    .trusted-by p {
+    #trusted-by p {
         font-size: 1.25rem;
         line-height: 1.75rem;
         margin-top: 24px;
@@ -851,7 +855,9 @@ height: 100vh;
         color: #727378;
     }
 
-    .trusted-by .row:nth-child(2) {
-        padding-bottom: 0 !important;
+    #trusted-by .client-image{
+        grid-template-columns: auto;
+      
     }
+
 }

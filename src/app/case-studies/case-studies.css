@@ -368,6 +368,7 @@ background-color: #17181C;
 @media (max-width:48rem) {
     #cs-hero .case-box {
         margin-top: 2.5rem;
+        margin-bottom: 0;
         background: linear-gradient(0deg, rgba(23, 24, 28, 0.5), rgba(23, 24, 28, 0.5)), url(../../../public/assets/img/case-studies-img.jpg);
         padding: 1.25rem;
         background-position: center center;
@@ -385,7 +386,8 @@ background-color: #17181C;
     }
 
     #about-case {
-        padding: 3.375rem 0;
+        padding-top: 2.5rem ;
+        padding-bottom: 1px ;
     }
 
     #about-case h4 {
@@ -408,7 +410,7 @@ background-color: #17181C;
     }
 
     #about-case .annual-report-box {
-        margin: 3.375rem 0;
+        margin: 2.5rem 0;
     }
 
     #about-case .annual-report {
@@ -566,17 +568,22 @@ background-color: #17181C;
         line-height: 1.75rem;
     }
     #case-cta .cta-box .btn a{
-        padding: .625rem .75rem;
+        padding: 5px 10px;
         background-color: #fff;
         border-radius: 1.5625rem;
         color: #17181C;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1.25rem;
+        font-size: 1rem;
         line-height: 1.25rem;
     }
     #case-cta .cta-box .btn {
         margin-top: 1.25rem;
+        /* width: auto; */
+    }
+
+    #case-cta .cta-box .btn:focus{
+        outline: none;
     }
 
 }

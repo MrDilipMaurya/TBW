@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .black {
+    background-color: black;
+    color: white;
+  }
+  
+  .white {
+    background-color: white;
+    color: black;
+  }
+  
+  .logo .linkText {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+  }
+  
+  nav .link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .activeBlack {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .activeWhite {
+    font-weight: bold;
+    color: black;
+  }
+  

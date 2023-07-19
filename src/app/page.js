@@ -14,9 +14,11 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import TechDescription from "./components/techDescription";
+import Header from "./components/header";
 
 export default function Home() {
-
+  const backgroundColor = '#f0f0f0'; // Set the desired background color
+  const textColor = '#333';
   const images = [
     {
       src: "../../assets/img/laravel.svg",
@@ -87,7 +89,7 @@ export default function Home() {
   ];
   return (
     <>
-
+      <Header backgroundColor={backgroundColor} textColor={textColor} />
       <section id="hero">
         <div className="hero">
           <div className="container">
@@ -265,7 +267,7 @@ export default function Home() {
                   and flexible business solutions with us
                 </h3>
                 <div className="btn">
-                  <a href="#">Browse case studies</a>
+                  <a href="/case-studies">Browse case studies</a>
                   <svg
                     width="24"
                     height="24"

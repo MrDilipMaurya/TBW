@@ -11,7 +11,7 @@ const CaseStudies = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="back">
-                                <a href="#">
+                                <a href="/">
                                     <Image
                                         src={arrowLeft}
                                         alt="arrow left"
@@ -131,9 +131,9 @@ const CaseStudies = () => {
                         <div className="col-md-2"><svg width="74" height="74" viewBox="0 0 74 74" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M44.4912 18.2839L63.207 36.9998L44.4912 55.7156" fill="#0174F3" />
-                            <path d="M44.4912 18.2839L63.207 36.9998L44.4912 55.7156" stroke="#0174F3" stroke-width="1.5"
+                            <path d="M44.4912 18.2839L63.207 36.9998L44.4912 55.7156" stroke="#0174F3" strokeWidth="1.5"
                                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.792 37H62.6845" stroke="#0174F3" stroke-width="1.5" stroke-miterlimit="10"
+                            <path d="M10.792 37H62.6845" stroke="#0174F3" strokeWidth="1.5" stroke-miterlimit="10"
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         </div>
