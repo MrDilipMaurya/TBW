@@ -1,6 +1,7 @@
+import Image from "next/image";
 const WorkComponent = ({ title, description, link, imageSrc, logo, layout }) => {
     return (
-        <div className="row work-box ">
+        <div className="row work-box justify-content-between">
             {layout === 'left' ? (
                 <>
                     <div className="col-md-6">
@@ -12,13 +13,27 @@ const WorkComponent = ({ title, description, link, imageSrc, logo, layout }) => 
                         </a>
                     </div>
                     <div className="col-md-6">
-                        <img src={imageSrc} alt="Project Banner" className="w-100" />
+                        <Image
+                            src={imageSrc}
+                            alt="Project Banner"
+                            className="w-100 h-100"
+                            width="543"
+                            height="320"
+                        />
+                        {/* <img src={imageSrc} alt="Project Banner" className="w-100" /> */}
                     </div>
                 </>
             ) : (
                 <>
-                    <div className="col-md-6">
-                        <img src={imageSrc} alt="Project Banner" className="w-100" />
+                    <div className="col-md-6 ">
+                        <Image
+                            src={imageSrc}
+                            alt="Project Banner"
+                            className="w-100 h-100"
+                            width="543"
+                            height="320"
+                        />
+                        {/* <img src={imageSrc} alt="Project Banner" className="w-100" /> */}
                     </div>
                     <div className="col-md-6">
                         <img src={logo} alt="logo" className="img-fluid" />

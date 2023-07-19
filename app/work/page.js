@@ -196,7 +196,14 @@ const Work = () => {
                                 {filteredWorks.map((work) => (
                                     <div key={work.id} className="col-md-6">
                                         <div key={work.id} className="card">
-                                            <img src={work.image} className="card-img-top" alt="..." />
+                                            <Image
+                                                src={work.image}
+                                                alt="Project Banner"
+                                                className="w-100 h-100 card-img-top"
+                                                width="1920"
+                                                height="1080"
+                                            />
+                                            {/* <img src={work.image} className="card-img-top" alt="..." /> */}
                                             <div className="card-body">
                                                 <h2 className="card-title">{work.title}</h2>
                                                 <a href="#">

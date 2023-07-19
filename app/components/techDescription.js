@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const TechDiscription = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -11,12 +12,14 @@ const TechDiscription = ({ images }) => {
     <div>
       <div className="image-container">
         {images.map((image, index) => (
-          <img
+          <Image
             key={index}
             src={image.src}
             alt={image.alt}
             onClick={() => handleImageClick(index)}
             className={selectedImage === index ? 'selected' : ''}
+            width="200"
+            height="100"
           />
         ))}
       </div>

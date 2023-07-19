@@ -426,7 +426,13 @@ const Services = () => {
                         <div className="col-md-12">
                             <div className="client-image">
                                 {clientImage.map((index) => (
-                                    <img key={index.id} src={index.image} alt="" />
+                                    <Image
+                                        key={index.id}
+                                        src={index.image}
+                                        alt="Client"
+                                        width="264"
+                                        height="68"
+                                    />
                                 ))}
                             </div>
                         </div>
