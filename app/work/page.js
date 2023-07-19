@@ -194,7 +194,7 @@ const Work = () => {
                         <div className="col-md-8">
                             <div className="row">
                                 {filteredWorks.map((work) => (
-                                    <div className="col-md-6">
+                                    <div key={work.id} className="col-md-6">
                                         <div key={work.id} className="card">
                                             <img src={work.image} className="card-img-top" alt="..." />
                                             <div className="card-body">
@@ -300,8 +300,8 @@ const Work = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="client-image">
-                                {clientImage.map((item, index) => (
-                                    <img key={index} src={item.image} alt="" />
+                                {clientImage.map((item) => (
+                                    <img key={item.id} src={item.image} alt="" />
                                 ))}
                             </div>
                         </div>

@@ -72,7 +72,7 @@ const Services = () => {
                             <div className="box-container">
                                 <div className="line">
                                     {DFD.map((index) => (
-                                        <div className="box">
+                                        <div key={index.id} className="box">
                                             <div className="icon">
                                                 <Image
                                                     src={index.image}
@@ -99,7 +99,7 @@ const Services = () => {
                             <div className="box-container">
                                 <div className="line">
                                     {AED.map((index) => (
-                                        <div className="box">
+                                        <div key={index.id} className="box">
                                             <div className="icon">
                                                 <Image
                                                     src={index.image}
@@ -171,7 +171,7 @@ const Services = () => {
                                 <div className="line">
 
                                     {WD.map((index) => (
-                                        <div className="box">
+                                        <div key={index.id} className="box">
                                             <div className="icon">
                                                 <Image
                                                     src={index.image}
@@ -199,7 +199,7 @@ const Services = () => {
                             <div className="box-container">
                                 <div className="line">
                                     {ADT.map((index) => (
-                                        <div className="box">
+                                        <div key={index.id} className="box">
                                             <div className="icon">
                                                 <Image
                                                     src={index.image}
@@ -269,7 +269,7 @@ const Services = () => {
                                 <div className="line">
 
                                     {W3.map((index) => (
-                                        <div className="box">
+                                        <div key={index.id} className="box">
                                             <div className="icon">
                                                 <Image
                                                     src={index.image}
@@ -296,7 +296,7 @@ const Services = () => {
                                 <div className="line">
 
                                     {DE.map((index) => (
-                                        <div className="box">
+                                        <div key={index.id} className="box">
                                             <div className="icon">
                                                 <Image
                                                     src={index.image}
@@ -360,7 +360,7 @@ const Services = () => {
                             <div className="box-container">
                                 <div className="line">
                                     {AM.map((index) => (
-                                        <div className="box">
+                                        <div key={index.id} className="box">
                                             <div className="icon">
                                                 <Image
                                                     src={index.image}
@@ -426,7 +426,7 @@ const Services = () => {
                         <div className="col-md-12">
                             <div className="client-image">
                                 {clientImage.map((index) => (
-                                    <img src={index.image} alt="" />
+                                    <img key={index.id} src={index.image} alt="" />
                                 ))}
                             </div>
                         </div>
