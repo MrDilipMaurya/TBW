@@ -1,0 +1,32 @@
+nav.navbar-dark{
+  background-color: #17181C;
+}
+
+.navbar-dark .nav-link{
+  color: white;
+}
+
+.navbar button.btn{
+  border-radius: 25px;
+  padding: 6px 10px;
+  padding-right: 40px;
+  background-image: url("../../public/assets/img/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+@media (max-width:768px) {
+.navbar-collapse{
+  padding: 20px;
+}
+  .navbar-nav{
+    padding: 20px 0;
+  }
+  .nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link {
+  margin: 10px 0;
+}
+}

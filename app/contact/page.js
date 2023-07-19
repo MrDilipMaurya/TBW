@@ -1,10 +1,10 @@
 import "./contact.css"
 import Image from "next/image";
 // import logo from "../../../public/assets/img/logo.svg";
-import logo from "../../../public/assets/img/tb-logo-black.svg";
-import client from "../../../public/assets/img/tb-logo.svg";
-import arrowLeft from "../../../public/assets/img/arrow-left.svg";
-import star from "../../../public/assets/img/star.svg";
+import logo from "../../public/assets/img/tb-logo-black.svg";
+import client from "../../public/assets/img/tb-logo.svg";
+import arrowLeft from "../../public/assets/img/arrow-left.svg";
+import star from "../../public/assets/img/star.svg";
 // import person from "https://via.placeholder.com/170"
 const Contact = () => {
     return (

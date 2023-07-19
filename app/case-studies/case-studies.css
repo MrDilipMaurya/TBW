@@ -366,6 +366,10 @@ background-color: #17181C;
 }
 
 @media (max-width:48rem) {
+
+    #cs-hero .back {
+        margin-top: 7.125rem;
+    }
     #cs-hero .case-box {
         margin-top: 2.5rem;
         margin-bottom: 0;

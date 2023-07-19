@@ -1,11 +1,16 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import './case-studies.css'
 import arrowLeft from '../../../public/assets/img/arrow-left.svg'
 import caseBoxLogo from '../../../public/assets/img/enso.png'
+import Navbar from '../components/header'
 const CaseStudies = () => {
+    const theme = 'dark';
     return (
         <>
+            <Navbar theme={theme} />
+
             <section id="cs-hero">
                 <div className="container">
                     <div className="row">
@@ -132,9 +137,9 @@ const CaseStudies = () => {
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M44.4912 18.2839L63.207 36.9998L44.4912 55.7156" fill="#0174F3" />
                             <path d="M44.4912 18.2839L63.207 36.9998L44.4912 55.7156" stroke="#0174F3" strokeWidth="1.5"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.792 37H62.6845" stroke="#0174F3" strokeWidth="1.5" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M10.792 37H62.6845" stroke="#0174F3" strokeWidth="1.5" strokeMiterlimit="10"
+                                strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                         <div className="col-md-5 after">

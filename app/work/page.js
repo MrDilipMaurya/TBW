@@ -2,12 +2,13 @@
 import Image from "next/image";
 import React from "react";
 import "./work.css";
-import star from "../../../public/assets/img/star.svg"
+import star from "../../public/assets/img/star.svg"
 import WorkComponent from "../components/work";
 import { useState } from "react";
+import Navbar from "../components/header";
 const Work = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
-
+    const theme = "light"
     const clientImage = [
         {
             id: 1,
@@ -83,6 +84,7 @@ const Work = () => {
         : works;
     return (
         <>
+            <Navbar theme={theme} />
             <section id="work-hero">
                 <div className="container">
                     <h6>
@@ -194,7 +196,7 @@ const Work = () => {
                                 {filteredWorks.map((work) => (
                                     <div className="col-md-6">
                                         <div key={work.id} className="card">
-                                            <img src={work.image} class="card-img-top" alt="..." />
+                                            <img src={work.image} className="card-img-top" alt="..." />
                                             <div className="card-body">
                                                 <h2 className="card-title">{work.title}</h2>
                                                 <a href="#">
@@ -209,16 +211,16 @@ const Work = () => {
                                                         <path
                                                             d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
                                                             stroke="#0174F3"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
+                                                            strokeWidth="1.5"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
                                                         ></path>
                                                         <path
                                                             d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
                                                             stroke="#0174F3"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
+                                                            strokeWidth="1.5"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
                                                         ></path>
                                                     </svg>
                                                 </a>
@@ -242,11 +244,11 @@ const Work = () => {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            <div class="box-item">
-                                <div class="img-container">
-                                    <img src="https://via.placeholder.com/497x591" alt="" class="" />
+                            <div className="box-item">
+                                <div className="img-container">
+                                    <img src="https://via.placeholder.com/497x591" alt="" className="" />
                                 </div>
-                                <div class="text-container">
+                                <div className="text-container">
                                     <img src="https://via.placeholder.com/125x90" alt="" />
                                     <h4>“They are more than just a software company. They are the partner who will
                                         help you achieve what you want to achieve”</h4>
@@ -283,7 +285,7 @@ const Work = () => {
                                             height="24px"
                                         />
                                     </div>
-                                    <div class="client">
+                                    <div className="client">
                                         <h4>ABC</h4>
                                         <p>Product Manager at XYZ</p>
                                     </div>

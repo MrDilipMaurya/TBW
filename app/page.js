@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import "./page.css";
-import star from "../../public/assets/img/star.svg";
-import pms from "../../public/assets/img/pms.svg";
-import arrowRight from "../../public/assets/img/arrow-right.svg";
+import star from "../public/assets/img/star.svg";
+import pms from "../public/assets/img/pms.svg";
+import arrowRight from "../public/assets/img/arrow-right.svg";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Head from "next/head";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,11 +14,10 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import TechDescription from "./components/techDescription";
-import Header from "./components/header";
+import Navbar from "./components/header";
 
 export default function Home() {
-  const backgroundColor = '#f0f0f0'; // Set the desired background color
-  const textColor = '#333';
+  const theme = 'dark';
   const images = [
     {
       src: "../../assets/img/laravel.svg",
@@ -89,7 +88,19 @@ export default function Home() {
   ];
   return (
     <>
-      <Header backgroundColor={backgroundColor} textColor={textColor} />
+      <Head>
+        <title>Home | Taknik Bharti</title>
+        <meta charset="UTF-8" />
+        <meta name="description"
+          content="A Bikaner-based Taknik Bharti has built a variety of business solution" />
+        <meta name="keywords"
+          content="HTML, CSS, JavaScript, NextJS" />
+        <meta name="author"
+          content="Dilip Kumar" />
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <Navbar theme={theme} />
       <section id="hero">
         <div className="hero">
           <div className="container">
@@ -282,18 +293,18 @@ export default function Home() {
                     <path
                       d="M14.4302 5.92999L20.5002 12L14.4302 18.07"
                       stroke="#0174F3"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                     <path
                       d="M3.5 12H20.33"
                       stroke="#0174F3"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>
                   </svg>
                 </div>
@@ -349,16 +360,16 @@ export default function Home() {
                           <path
                             d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </div>
@@ -402,16 +413,16 @@ export default function Home() {
                           <path
                             d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </div>
@@ -455,16 +466,16 @@ export default function Home() {
                           <path
                             d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </div>
@@ -508,16 +519,16 @@ export default function Home() {
                           <path
                             d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </div>
@@ -561,16 +572,16 @@ export default function Home() {
                           <path
                             d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </div>
@@ -614,16 +625,16 @@ export default function Home() {
                           <path
                             d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                           <path
                             d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
                             stroke="#0174F3"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></path>
                         </svg>
                       </div>
@@ -894,14 +905,14 @@ export default function Home() {
                 className="testimonial-boxes"
               >
                 <SwiperSlide>
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <div className="card-title">
                         <h3>Client Name</h3>
                         <p>Designation of the Client</p>
                       </div>
-                      <div class="card-text">
-                        <div class="star">
+                      <div className="card-text">
+                        <div className="star">
                           <Image
                             src={star}
                             alt="star rating"
@@ -939,14 +950,14 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <div className="card-title">
                         <h3>Client Name</h3>
                         <p>Designation of the Client</p>
                       </div>
-                      <div class="card-text">
-                        <div class="star">
+                      <div className="card-text">
+                        <div className="star">
                           <Image
                             src={star}
                             alt="star rating"
@@ -983,14 +994,14 @@ export default function Home() {
                     </div>
                   </div>
                 </SwiperSlide> <SwiperSlide>
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <div className="card-title">
                         <h3>Client Name</h3>
                         <p>Designation of the Client</p>
                       </div>
-                      <div class="card-text">
-                        <div class="star">
+                      <div className="card-text">
+                        <div className="star">
                           <Image
                             src={star}
                             alt="star rating"
@@ -1027,14 +1038,14 @@ export default function Home() {
                     </div>
                   </div>
                 </SwiperSlide> <SwiperSlide>
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <div className="card-title">
                         <h3>Client Name</h3>
                         <p>Designation of the Client</p>
                       </div>
-                      <div class="card-text">
-                        <div class="star">
+                      <div className="card-text">
+                        <div className="star">
                           <Image
                             src={star}
                             alt="star rating"
@@ -1071,14 +1082,14 @@ export default function Home() {
                     </div>
                   </div>
                 </SwiperSlide> <SwiperSlide>
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <div className="card-title">
                         <h3>Client Name</h3>
                         <p>Designation of the Client</p>
                       </div>
-                      <div class="card-text">
-                        <div class="star">
+                      <div className="card-text">
+                        <div className="star">
                           <Image
                             src={star}
                             alt="star rating"

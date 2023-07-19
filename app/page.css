@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: url('../../public/assets/img/hero-img.png');
+    background: url('../public/assets/img/hero-img.png');
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: 27%;
@@ -417,7 +417,7 @@ text-align: center;
 @media (max-width:48rem) {
     .hero {
         height: auto;
-
+padding-top: 70px;
         background: #17181C;
     }
 

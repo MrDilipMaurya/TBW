@@ -1,19 +1,23 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
-import DPD from "../../../public/assets/img/digital-product-design.svg"
-import AID from "../../../public/assets/img/ai-enabled-development.svg"
-import WeBD from "../../../public/assets/img/web-development.svg"
-import AgileD from "../../../public/assets/img/agile-development.svg"
-import Web3 from "../../../public/assets/img/web3.svg"
-import DataE from "../../../public/assets/img/data-engineering.svg"
-import AppM from "../../../public/assets/img/app-modernisation.svg"
-import referralPhoto from "../../../public/assets/img/referral-photo.png"
+import DPD from "../../public/assets/img/digital-product-design.svg"
+import AID from "../../public/assets/img/ai-enabled-development.svg"
+import WeBD from "../../public/assets/img/web-development.svg"
+import AgileD from "../../public/assets/img/agile-development.svg"
+import Web3 from "../../public/assets/img/web3.svg"
+import DataE from "../../public/assets/img/data-engineering.svg"
+import AppM from "../../public/assets/img/app-modernisation.svg"
+import referralPhoto from "../../public/assets/img/referral-photo.png"
 
 import "./services.css"
 import { DFD, AED, WD, ADT, W3, DE, AM, clientImage } from './images'
+import Navbar from '../components/header'
 const Services = () => {
+    const theme = 'light';
     return (
         <>
+            <Navbar theme={theme} />
             <section id="service-hero">
                 <div className="container">
                     <div className="row">
@@ -384,7 +388,7 @@ const Services = () => {
                                 <div className="row align-items-center justify-content-between">
                                     <div className="col-md-7">
                                         <h3>60% of our projects come from referrals</h3>
-                                        <div class="description">
+                                        <div className="description">
                                             <p>Taknik Bharti was recognised for business growth, quality delivery, and
                                                 culture-nurturing</p>
                                             <p>Here’s our 3-part formula for lasting partnerships: understand how and why people
