@@ -6,6 +6,7 @@ import './cs-studies.css'
 import arrowLeft from '../../public/assets/img/arrow-left.svg'
 import caseBoxLogo from '../../public/assets/img/enso.png'
 import Navbar from '../components/header'
+import Footer from '../components/footer'
 const CaseStudies = () => {
     const theme = 'dark';
     return (
@@ -218,6 +219,7 @@ const CaseStudies = () => {
                     </div>
                 </div>
             </section>
+            <Footer theme={theme} />
         </>
     )
 }

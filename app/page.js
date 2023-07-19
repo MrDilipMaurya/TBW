@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import TechDescription from "./components/techDescription";
 import Navbar from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home() {
   const theme = 'dark';
@@ -1132,6 +1133,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer theme={theme} />
     </>
   );
 }

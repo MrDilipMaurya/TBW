@@ -13,6 +13,7 @@ import referralPhoto from "../../public/assets/img/referral-photo.png"
 import "./services.css"
 import { DFD, AED, WD, ADT, W3, DE, AM, clientImage } from './images'
 import Navbar from '../components/header'
+import Footer from '../components/footer'
 const Services = () => {
     const theme = 'light';
     return (
@@ -439,7 +440,7 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-
+            <Footer theme={theme} />
         </>
     )
 }

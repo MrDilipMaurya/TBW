@@ -6,6 +6,7 @@ import star from "../../public/assets/img/star.svg"
 import WorkComponent from "../components/work";
 import { useState } from "react";
 import Navbar from "../components/header";
+import Footer from "../components/footer";
 const Work = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const theme = "light"
@@ -315,6 +316,8 @@ const Work = () => {
                     </div>
                 </div>
             </section>
+            <Footer theme={theme} />
+
         </>
     );
 };
