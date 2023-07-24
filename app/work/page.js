@@ -3,6 +3,8 @@ import Image from "next/image";
 import React from "react";
 import "./work.css";
 import star from "../../public/assets/img/star.svg"
+import logo from "../../public/assets/img/tb-logo-black.svg"
+import clientImg from "../../public/assets/img/case-studies-img.jpg"
 import WorkComponent from "../components/work";
 import { useState } from "react";
 import Navbar from "../components/header";
@@ -204,7 +206,6 @@ const Work = () => {
                                                 width="1920"
                                                 height="1080"
                                             />
-                                            {/* <img src={work.image} className="card-img-top" alt="..." /> */}
                                             <div className="card-body">
                                                 <h2 className="card-title">{work.title}</h2>
                                                 <a href="#">
@@ -254,10 +255,22 @@ const Work = () => {
                         <div className="col-md-12">
                             <div className="box-item">
                                 <div className="img-container">
-                                    <img src="https://via.placeholder.com/497x591" alt="" className="" />
+                                    <Image
+                                        src={clientImg}
+                                        alt="client image"
+                                        width="297"
+                                        height="591"
+                                        style={{ objectFit: "cover" }}
+
+                                    />
                                 </div>
                                 <div className="text-container">
-                                    <img src="https://via.placeholder.com/125x90" alt="" />
+                                    <Image
+                                        src={logo}
+                                        alt="logo"
+                                        width="125"
+                                        height="90"
+                                    />
                                     <h4>“They are more than just a software company. They are the partner who will
                                         help you achieve what you want to achieve”</h4>
 
@@ -309,7 +322,13 @@ const Work = () => {
                         <div className="col-md-12">
                             <div className="client-image">
                                 {clientImage.map((item) => (
-                                    <img key={item.id} src={item.image} alt="" />
+                                    <Image
+                                        key={item.id}
+                                        src={item.image}
+                                        alt="client"
+                                        width="264"
+                                        height="68"
+                                    />
                                 ))}
                             </div>
                         </div>
