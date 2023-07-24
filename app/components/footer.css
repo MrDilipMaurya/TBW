@@ -1,6 +1,9 @@
-@import "https://fonts.googleapis.com/css?family=Roboto Mono";body {
-    font-family: Roboto Mono,monospace
+@import "https://fonts.googleapis.com/css?family=Roboto Mono";
+
+body {
+    font-family: 'Roboto Mono';
 }
+
 .footer-dark{
     background-color: #17181C;
     color: white;
