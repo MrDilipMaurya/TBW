@@ -32,7 +32,6 @@ const WorkComponent = ({ title, description, link, imageSrc, logo, layout }) => 
                             width="543"
                             height="320"
                         />
-                        {/* <img src={imageSrc} alt="Project Banner" className="w-100" /> */}
                     </div>
                 </>
             ) : (
