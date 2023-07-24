@@ -17,6 +17,7 @@ import TechDescription from "./components/techDescription";
 import Navbar from "./components/header";
 import Footer from "./components/footer";
 import ProjectSlide from "./components/projectSlide";
+import TestimonialSlide from "./components/testimonialSlide";
 
 export default function Home() {
   const theme = 'dark';
@@ -625,226 +626,26 @@ export default function Home() {
                 className="testimonial-boxes"
               >
                 <SwiperSlide>
-                  <div className="card">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h3>Client Name</h3>
-                        <p>Designation of the Client</p>
-                      </div>
-                      <div className="card-text">
-                        <div className="star">
-                          <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          />
-                        </div>
-                        <p>
-                          Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                          by client will here. " star="3" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="card">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h3>Client Name</h3>
-                        <p>Designation of the Client</p>
-                      </div>
-                      <div className="card-text">
-                        <div className="star">
-                          <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          />
-                        </div>
-                        <p>
-                          Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                  <TestimonialSlide clName="Hemant " clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                          by client will here. " star="5" />
                 </SwiperSlide> <SwiperSlide>
-                  <div className="card">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h3>Client Name</h3>
-                        <p>Designation of the Client</p>
-                      </div>
-                      <div className="card-text">
-                        <div className="star">
-                          <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          />
-                        </div>
-                        <p>
-                          Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                          by client will here. " star="3" />
                 </SwiperSlide> <SwiperSlide>
-                  <div className="card">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h3>Client Name</h3>
-                        <p>Designation of the Client</p>
-                      </div>
-                      <div className="card-text">
-                        <div className="star">
-                          <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          />
-                        </div>
-                        <p>
-                          Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                          by client will here. " star="3" />
                 </SwiperSlide> <SwiperSlide>
-                  <div className="card">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h3>Client Name</h3>
-                        <p>Designation of the Client</p>
-                      </div>
-                      <div className="card-text">
-                        <div className="star">
-                          <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          /> <Image
-                            src={star}
-                            alt="star rating"
-                            width="24px"
-                            height="24px"
-                          />
-                        </div>
-                        <p>
-                          Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                          by client will here. " star="1" />
                 </SwiperSlide>
 
               </Swiper>

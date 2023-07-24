@@ -307,10 +307,12 @@ body {
 
 #tech-stack .techs .image-container
 {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: auto auto auto auto auto;
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    /* grid-template-columns: auto auto auto auto auto;
+    place-items: center; */
     margin-top: 4.8125rem;
     margin-bottom: 5.625rem;
 }
@@ -399,6 +401,10 @@ text-align: center;
 
 #testimonials  .testimonial-boxes .card .card-text .star {
     padding: 2.25rem 0 1.9375rem 0;
+}
+
+#testimonials  .testimonial-boxes .card .card-text .star img{
+    margin-right: 12px;
 }
 
 #testimonials  .testimonial-boxes .card .stats {
