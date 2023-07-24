@@ -265,6 +265,11 @@ width: 100%;
 
     color: #17181C;
 }
+
+#professional-review .text-container img{
+    height: auto;
+    width: auto;
+}
 #our-clients .client-image{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;

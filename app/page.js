@@ -10,12 +10,13 @@ import Head from "next/head";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import TechDescription from "./components/techDescription";
 import Navbar from "./components/header";
 import Footer from "./components/footer";
+import ProjectSlide from "./components/projectSlide";
 
 export default function Home() {
   const theme = 'dark';
@@ -89,18 +90,6 @@ export default function Home() {
   ];
   return (
     <>
-      <Head>
-        <title>Home | Taknik Bharti</title>
-        <meta charset="UTF-8" />
-        <meta name="description"
-          content="A Bikaner-based Taknik Bharti has built a variety of business solution" />
-        <meta name="keywords"
-          content="HTML, CSS, JavaScript, NextJS" />
-        <meta name="author"
-          content="Dilip Kumar" />
-        <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
-      </Head>
       <Navbar theme={theme} />
       <section id="hero">
         <div className="hero">
@@ -339,322 +328,52 @@ export default function Home() {
                 className="project-sol"
               >
                 <SwiperSlide>
-                  <div className="card">
-                    {/* <img src="./assets/img/pms.svg" className="" alt="..." /> */}
-                    <Image
-                      src={pms}
-                      alt="Project Banner"
-                      width="344px"
-                      height="88px"
-                      className="card-img-top"
-                    />
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h5>Pradhanmantri Sangrahalaya</h5>{" "}
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                          <path
-                            d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <div className="stats">
-                        <div className="tickets">
-                          <h3>0.35M</h3>
-                          <h4>Tickets Booked</h4>
-                        </div>
-                        <div className="revenue">
-                          <h3>42.07+M</h3>
-                          <h4>Revenue Generated</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <ProjectSlide
+                    bannerImg="./assets/img/pms.svg"
+                    title="Pradhanmantri Sangrahalaya"
+                    description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
+                    link="https://www.pmsangrahalaya.gov.in/"
+                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="card">
-                    {/* <img src="./assets/img/pms.svg" className="" alt="..." /> */}
-                    <Image
-                      src={pms}
-                      alt="Project Banner"
-                      width="344px"
-                      height="88px"
-                      className="card-img-top"
-                    />
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h5>Pradhanmantri Sangrahalaya</h5>{" "}
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                          <path
-                            d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <div className="stats">
-                        <div className="tickets">
-                          <h3>0.35M</h3>
-                          <h4>Tickets Booked</h4>
-                        </div>
-                        <div className="revenue">
-                          <h3>42.07+M</h3>
-                          <h4>Revenue Generated</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>{" "}
+                  <ProjectSlide
+                    bannerImg="./assets/img/pms.svg"
+                    title="Pradhanmantri Sangrahalaya"
+                    description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
+                    link="https://www.pmsangrahalaya.gov.in/"
+                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                </SwiperSlide>
                 <SwiperSlide>
-                  <div className="card">
-                    {/* <img src="./assets/img/pms.svg" className="" alt="..." /> */}
-                    <Image
-                      src={pms}
-                      alt="Project Banner"
-                      width="344px"
-                      height="88px"
-                      className="card-img-top"
-                    />
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h5>Pradhanmantri Sangrahalaya</h5>{" "}
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                          <path
-                            d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <div className="stats">
-                        <div className="tickets">
-                          <h3>0.35M</h3>
-                          <h4>Tickets Booked</h4>
-                        </div>
-                        <div className="revenue">
-                          <h3>42.07+M</h3>
-                          <h4>Revenue Generated</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>{" "}
+                  <ProjectSlide
+                    bannerImg="./assets/img/pms.svg"
+                    title="Pradhanmantri Sangrahalaya"
+                    description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
+                    link="https://www.pmsangrahalaya.gov.in/"
+                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                </SwiperSlide>
                 <SwiperSlide>
-                  <div className="card">
-                    {/* <img src="./assets/img/pms.svg" className="" alt="..." /> */}
-                    <Image
-                      src={pms}
-                      alt="Project Banner"
-                      width="344px"
-                      height="88px"
-                      className="card-img-top"
-                    />
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h5>Pradhanmantri Sangrahalaya</h5>{" "}
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                          <path
-                            d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <div className="stats">
-                        <div className="tickets">
-                          <h3>0.35M</h3>
-                          <h4>Tickets Booked</h4>
-                        </div>
-                        <div className="revenue">
-                          <h3>42.07+M</h3>
-                          <h4>Revenue Generated</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>{" "}
+                  <ProjectSlide
+                    bannerImg="./assets/img/pms.svg"
+                    title="Pradhanmantri Sangrahalaya"
+                    description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
+                    link="https://www.pmsangrahalaya.gov.in/"
+                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                </SwiperSlide>
                 <SwiperSlide>
-                  <div className="card">
-                    {/* <img src="./assets/img/pms.svg" className="" alt="..." /> */}
-                    <Image
-                      src={pms}
-                      alt="Project Banner"
-                      width="344px"
-                      height="88px"
-                      className="card-img-top"
-                    />
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h5>Pradhanmantri Sangrahalaya</h5>{" "}
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                          <path
-                            d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <div className="stats">
-                        <div className="tickets">
-                          <h3>0.35M</h3>
-                          <h4>Tickets Booked</h4>
-                        </div>
-                        <div className="revenue">
-                          <h3>42.07+M</h3>
-                          <h4>Revenue Generated</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>{" "}
+                  <ProjectSlide
+                    bannerImg="./assets/img/pms.svg"
+                    title="Pradhanmantri Sangrahalaya"
+                    description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
+                    link="https://www.pmsangrahalaya.gov.in/"
+                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                </SwiperSlide>
                 <SwiperSlide>
-                  <div className="card">
-                    {/* <img src="./assets/img/pms.svg" className="" alt="..." /> */}
-                    <Image
-                      src={pms}
-                      alt="Project Banner"
-                      width="344px"
-                      height="88px"
-                      className="card-img-top"
-                    />
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h5>Pradhanmantri Sangrahalaya</h5>{" "}
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.5 12C13.5 15.18 10.93 17.75 7.75 17.75C4.57 17.75 2 15.18 2 12C2 8.82 4.57 6.25 7.75 6.25"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                          <path
-                            d="M10 12C10 8.69 12.69 6 16 6C19.31 6 22 8.69 22 12C22 15.31 19.31 18 16 18"
-                            stroke="#0174F3"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <div className="stats">
-                        <div className="tickets">
-                          <h3>0.35M</h3>
-                          <h4>Tickets Booked</h4>
-                        </div>
-                        <div className="revenue">
-                          <h3>42.07+M</h3>
-                          <h4>Revenue Generated</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <ProjectSlide
+                    bannerImg="./assets/img/pms.svg"
+                    title="Pradhanmantri Sangrahalaya"
+                    description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
+                    link="https://www.pmsangrahalaya.gov.in/"
+                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
                 </SwiperSlide>
               </Swiper>
             </div>

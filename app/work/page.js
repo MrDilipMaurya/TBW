@@ -143,11 +143,11 @@ const Work = () => {
                     <div className="row align-items-center">
                         <div className="col-md-8">
                             <h4>
-                                Over 10 technology-first businesses{" "}
+                                Over 10 technology-first businesses
                                 <span>
                                     secured measurably greater scalability, performance,and
-                                    popularity{" "}
-                                </span>{" "}
+                                    popularity
+                                </span>
                                 of their products with us. See how much custom software
                                 development services changed for them.
                             </h4>
@@ -209,7 +209,7 @@ const Work = () => {
                                             <div className="card-body">
                                                 <h2 className="card-title">{work.title}</h2>
                                                 <a href="#">
-                                                    <span>{work.category}</span>{" "}
+                                                    <span>{work.category}</span>
                                                     <svg
                                                         width="24"
                                                         height="24"
