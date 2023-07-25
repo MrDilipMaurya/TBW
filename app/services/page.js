@@ -15,7 +15,7 @@ import { DFD, AED, WD, ADT, W3, DE, AM, clientImage } from './images'
 import Navbar from '../components/header'
 import Footer from '../components/footer'
 const Services = () => {
-    const theme = 'light';
+    const theme = '';
     return (
         <>
             <Navbar theme={theme} />

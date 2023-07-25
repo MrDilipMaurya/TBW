@@ -10,19 +10,26 @@ import React, { useEffect, useState } from 'react';
 const CustomNavbar = ({ theme }) => {
     const router = useRouter();
     const [activePath, setActivePath] = useState('/');
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+        setScrolled(window.scrollY > 100);
+    };
 
     useEffect(() => {
-        // Function to handle route change
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    useEffect(() => {
         const handleRouteChange = (url) => {
             setActivePath(url);
         };
 
-        // Check if router.events exists before adding the event listener
         if (router?.events) {
-            // Listen to the 'routeChangeComplete' event to update the active path
             router.events.on('routeChangeComplete', handleRouteChange);
-
-            // Clean up the event listener when the component unmounts
             return () => {
                 router.events.off('routeChangeComplete', handleRouteChange);
             };
@@ -31,34 +38,40 @@ const CustomNavbar = ({ theme }) => {
 
     const navbarClass = classnames('navbar', {
         'navbar-dark': theme === 'dark',
-        'navbar-light': theme === 'light',
+        // 'navbar-light': theme === 'light',
+
     }, 'fixed-top');
 
+    const scroll = classnames({
+        'scrolled': scrolled,
+    })
     const logoImage = theme === 'dark' ? logoDark : logoLight;
 
     return (
-        <Navbar className={navbarClass} expand="lg">
-            <Container>
-                <Navbar.Brand href="/">
-                    <Image
-                        src={logoImage}
-                        alt="Taknik Bharti Logo"
-                        width="200"
-                        height="51"
-                    />
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="/work" className={activePath === '/work' ? 'active' : ''}>Our Work</Nav.Link>
-                        <Nav.Link href="/services" className={activePath === '/services' ? 'active' : ''}>Services</Nav.Link>
-                    </Nav>
-                    <Button variant="primary">
-                        <Nav.Link href="/contact" className={activePath === '/contact' ? 'active' : ''}>Contact</Nav.Link>
-                    </Button>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <div className={scroll}>
+            <Navbar className={navbarClass} expand="lg">
+                <Container>
+                    <Navbar.Brand href="/">
+                        <Image
+                            src={logoImage}
+                            alt="Taknik Bharti Logo"
+                            width="200"
+                            height="51"
+                        />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="/work" className={activePath === '/work' ? 'active' : ''}>Our Work</Nav.Link>
+                            <Nav.Link href="/services" className={activePath === '/services' ? 'active' : ''}>Services</Nav.Link>
+                        </Nav>
+                        <Button variant="primary">
+                            <Nav.Link href="/contact" className={activePath === '/contact' ? 'active' : ''}>Contact</Nav.Link>
+                        </Button>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div>
     );
 };
 
