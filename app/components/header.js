@@ -49,6 +49,13 @@ const CustomNavbar = ({ theme }) => {
 
     return (
         <div className={scroll}>
+            <style jsx global>{`
+      @import "https://fonts.googleapis.com/css?family=Roboto Mono";
+
+      body {
+          font-family: 'Roboto Mono';
+      }
+      `}</style>
             <Navbar className={navbarClass} expand="lg">
                 <Container>
                     <Navbar.Brand href="/">
