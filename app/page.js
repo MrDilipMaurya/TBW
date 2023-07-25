@@ -6,7 +6,6 @@ import pms from "../public/assets/img/pms.svg";
 import arrowRight from "../public/assets/img/arrow-right.svg";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Head from "next/head";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,74 +19,81 @@ import ProjectSlide from "./components/projectSlide";
 import TestimonialSlide from "./components/testimonialSlide";
 
 export default function Home() {
-  const theme = 'dark';
+  const theme = "dark";
   const images = [
     {
       src: "../../assets/img/laravel.svg",
       alt: "Laravel",
       title: "Laravel",
-      description: "A well-patched product foundation that's the most popular ,PHP framework among developers because of its range of solutions.",
-      link: "https://laravel.org/"
+      description:
+        "A well-patched product foundation that's the most popular ,PHP framework among developers because of its range of solutions.",
+      link: "https://laravel.org/",
     },
     {
       src: "../../assets/img/vuejs.svg",
       alt: "Vue Js ",
       title: "Vue Js",
-      description: "An approachable, performant and versatile framework for building web user interfaces.",
-      link: "https://vuejs.org/"
+      description:
+        "An approachable, performant and versatile framework for building web user interfaces.",
+      link: "https://vuejs.org/",
     },
     {
       src: "../../assets/img/react.svg",
       alt: "React js",
       title: "React js",
-      description: "React is a highly acclaimed and widely adopted JavaScript library that has gained immense popularity among developers.",
-      link: "https://react.dev/"
+      description:
+        "React is a highly acclaimed and widely adopted JavaScript library that has gained immense popularity among developers.",
+      link: "https://react.dev/",
     },
     {
       src: "../../assets/img/nodejs.svg",
       alt: "Node js",
       title: "Node js",
-      description: "Node.js is a widely embraced and highly popular JavaScript runtime environment that has become the cornerstone of modern web development.",
-      link: "https://nodejs.org/en"
+      description:
+        "Node.js is a widely embraced and highly popular JavaScript runtime environment that has become the cornerstone of modern web development.",
+      link: "https://nodejs.org/en",
     },
     {
       src: "../../assets/img/next.svg",
       alt: "Next Js ",
       title: "Next Js",
-      description: "Used by some of the world's largest companies, Next.js enables you to create full-stack Web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.",
-      link: "https://nextjs.org/"
+      description:
+        "Used by some of the world's largest companies, Next.js enables you to create full-stack Web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.",
+      link: "https://nextjs.org/",
     },
     {
       src: "../../assets/img/nuxt.svg",
       alt: "Nuxt Js ",
       title: "Nuxt Js",
-      description: "Build your next Vue.js application with confidence using Nuxt. An open source framework under MIT license that makes web development simple and powerful.      ",
-      link: "https://nuxt.com/"
+      description:
+        "Build your next Vue.js application with confidence using Nuxt. An open source framework under MIT license that makes web development simple and powerful.      ",
+      link: "https://nuxt.com/",
     },
     {
       src: "../../assets/img/golang.svg",
       alt: "Golang ",
       title: "Golang",
       description: "Build simple, secure, scalable systems with Go.      ",
-      link: "https://go.dev/"
+      link: "https://go.dev/",
     },
 
     {
       src: "../../assets/img/flutter.svg",
       alt: "Flutter ",
       title: "Flutter",
-      description: "Flutter transforms the app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.      ",
-      link: "https://flutter.dev/"
+      description:
+        "Flutter transforms the app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.      ",
+      link: "https://flutter.dev/",
     },
 
     {
       src: "../../assets/img/aws.svg",
       alt: "AWS ",
       title: "AWS",
-      description: "AWS (Amazon Web Services) is a comprehensive and highly scalable cloud computing platform provided by Amazon.",
-      link: "https://aws.amazon.com/"
+      description:
+        "AWS (Amazon Web Services) is a comprehensive and highly scalable cloud computing platform provided by Amazon.",
+      link: "https://aws.amazon.com/",
     },
-
   ];
   return (
     <>
@@ -334,7 +340,11 @@ export default function Home() {
                     title="Pradhanmantri Sangrahalaya"
                     description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
                     link="https://www.pmsangrahalaya.gov.in/"
-                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                    ticketValue="0.35M"
+                    ticketTitle="Tickets Booked"
+                    revTitle="Revenue Generated"
+                    revValue="42.07+M"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
                   <ProjectSlide
@@ -342,7 +352,11 @@ export default function Home() {
                     title="Pradhanmantri Sangrahalaya"
                     description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
                     link="https://www.pmsangrahalaya.gov.in/"
-                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                    ticketValue="0.35M"
+                    ticketTitle="Tickets Booked"
+                    revTitle="Revenue Generated"
+                    revValue="42.07+M"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
                   <ProjectSlide
@@ -350,7 +364,11 @@ export default function Home() {
                     title="Pradhanmantri Sangrahalaya"
                     description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
                     link="https://www.pmsangrahalaya.gov.in/"
-                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                    ticketValue="0.35M"
+                    ticketTitle="Tickets Booked"
+                    revTitle="Revenue Generated"
+                    revValue="42.07+M"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
                   <ProjectSlide
@@ -358,7 +376,11 @@ export default function Home() {
                     title="Pradhanmantri Sangrahalaya"
                     description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
                     link="https://www.pmsangrahalaya.gov.in/"
-                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                    ticketValue="0.35M"
+                    ticketTitle="Tickets Booked"
+                    revTitle="Revenue Generated"
+                    revValue="42.07+M"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
                   <ProjectSlide
@@ -366,7 +388,11 @@ export default function Home() {
                     title="Pradhanmantri Sangrahalaya"
                     description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
                     link="https://www.pmsangrahalaya.gov.in/"
-                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                    ticketValue="0.35M"
+                    ticketTitle="Tickets Booked"
+                    revTitle="Revenue Generated"
+                    revValue="42.07+M"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
                   <ProjectSlide
@@ -374,7 +400,11 @@ export default function Home() {
                     title="Pradhanmantri Sangrahalaya"
                     description="Two lines for this project. Two lines for this project. Two lines for this project. Two lines for this project."
                     link="https://www.pmsangrahalaya.gov.in/"
-                    ticketValue="0.35M" ticketTitle="Tickets Booked" revTitle="Revenue Generated" revValue="42.07+M" />
+                    ticketValue="0.35M"
+                    ticketTitle="Tickets Booked"
+                    revTitle="Revenue Generated"
+                    revValue="42.07+M"
+                  />
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -468,7 +498,9 @@ export default function Home() {
           <div className="row tech-box">
             <div className="col-md-4">
               <div className="tech-name">
-                <h5 className="text-white">Agile Development Teams on Demand</h5>
+                <h5 className="text-white">
+                  Agile Development Teams on Demand
+                </h5>
                 <Image
                   src={arrowRight}
                   alt="arrow right"
@@ -554,11 +586,14 @@ export default function Home() {
                 <div className="row align-items-center">
                   <div className="col-md-8">
                     <h3>
-                      Work with teams CTOs/Product manager praise as “super-friendly” and “reliable”
+                      Work with teams CTOs/Product manager praise as
+                      “super-friendly” and “reliable”
                     </h3>
                   </div>
                   <div className="col-md-4">
-                    <a href=""><button className="btn">book free consultation</button></a>
+                    <a href="">
+                      <button className="btn">book free consultation</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -571,19 +606,23 @@ export default function Home() {
           <div className="row">
             <div className="col-md-12">
               <div className="text-box">
-                <h5>The tech stack behind competitive, cloud-native products</h5>
-                <p>Our team of talented engineers has a proven track record of solving challenges for over 50 clients,
-                  demonstrating their ability to tackle any obstacle with scalable and flexible technologies.</p>
+                <h5>
+                  The tech stack behind competitive, cloud-native products
+                </h5>
+                <p>
+                  Our team of talented engineers has a proven track record of
+                  solving challenges for over 50 clients, demonstrating their
+                  ability to tackle any obstacle with scalable and flexible
+                  technologies.
+                </p>
                 <h4>Work with future-proof technologies</h4>
               </div>
             </div>
-
           </div>
           <div className="row">
             <div className="col-md-12">
               <div className="techs">
                 <TechDescription images={images} />
-
               </div>
             </div>
           </div>
@@ -595,7 +634,6 @@ export default function Home() {
             <div className="col-md-12">
               <div className="title">
                 <h3>Recommended by SME, startup, and scale-up clients</h3>
-
               </div>
             </div>
           </div>
@@ -626,28 +664,55 @@ export default function Home() {
                 className="testimonial-boxes"
               >
                 <SwiperSlide>
-                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                  <TestimonialSlide
+                    clName="Dilip Kumar"
+                    clDesignation="Developer"
+                    review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here. " star="3" />
+                          by client will here. "
+                    star="3"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <TestimonialSlide clName="Hemant " clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                  <TestimonialSlide
+                    clName="Hemant "
+                    clDesignation="Developer"
+                    review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here. " star="5" />
-                </SwiperSlide> <SwiperSlide>
-                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                          by client will here. "
+                    star="5"
+                  />
+                </SwiperSlide>{" "}
+                <SwiperSlide>
+                  <TestimonialSlide
+                    clName="Dilip Kumar"
+                    clDesignation="Developer"
+                    review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here. " star="3" />
-                </SwiperSlide> <SwiperSlide>
-                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                          by client will here. "
+                    star="3"
+                  />
+                </SwiperSlide>{" "}
+                <SwiperSlide>
+                  <TestimonialSlide
+                    clName="Dilip Kumar"
+                    clDesignation="Developer"
+                    review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here. " star="3" />
-                </SwiperSlide> <SwiperSlide>
-                  <TestimonialSlide clName="Dilip Kumar" clDesignation="Developer" review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
+                          by client will here. "
+                    star="3"
+                  />
+                </SwiperSlide>{" "}
+                <SwiperSlide>
+                  <TestimonialSlide
+                    clName="Dilip Kumar"
+                    clDesignation="Developer"
+                    review="Testimonials by client will be here.Testimonials by client will be here.Testimonials by client
                           will be here.Testimonials by client will be here.Testimonials by client will be here.Testimonials
-                          by client will here. " star="1" />
+                          by client will here. "
+                    star="1"
+                  />
                 </SwiperSlide>
-
               </Swiper>
             </div>
           </div>

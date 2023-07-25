@@ -594,6 +594,9 @@ padding-top: 70px;
     #tech-stack .techs .image-container
 {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+    justify-content: flex-start;
     overflow-x: scroll;
 }
     
@@ -604,8 +607,8 @@ padding-top: 70px;
         margin-bottom: 2.5rem;
     }
 
-    .testimonials {
-        margin-bottom: 2.5rem;
+    #testimonials {
+        padding-bottom: 5rem;
     }
 
 
@@ -658,4 +661,28 @@ padding-top: 70px;
     background-color: white;
     border-radius: 10px;
     opacity: 1 !important;
+}
+
+
+@media (max-width:48rem) {
+    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .swiper-button-prev:after,.swiper-button-next:after{
+        font-size: 20px !important;
+        padding: 10px 14px;
+    }
+    .swiper-pagination-bullet {
+        width: 20px !important;
+        height: 4px !important;
+        border-radius: 0 !important;
+        background: #CBCBCB !important;
+        opacity: 1 !important;
+    }
+
+    .swiper-pagination-bullet-active{
+        background: #0174F3 !important;
+    }
 }
