@@ -11,7 +11,6 @@ const login = async (email, password) => {
         }
         return {status:200,message:"User SignIn Successfully !"}
     } catch (error) {
-        0
         console.error('Login error:', error);
         throw error;
     }
