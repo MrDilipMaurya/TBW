@@ -1,39 +1,37 @@
 
 "use client";
 import { useState } from 'react';
-import { login } from '../api/login'
-import supabase from "../supabase";
+import { login } from '../../api/login'
 import "./login.css";
-import { useRouter } from 'next/navigation'; // Import useRouter
 import Image from 'next/image';
 import logo from '../../public/assets/img/tb-logo-black.svg'
 import React from 'react'
 
 const Login = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const router = useRouter(); // Initialize the useRouter hook
-
-    const handleLogin = async (e) => {
-        e.preventDefault();
-
+    const [email,changeEmail] = useState();
+    const [password,changePassword] = useState();
+    function updateEmail(event){
+        changeEmail(event.target.value);
+    }
+    function updatePassword(event){
+        changePassword(event.target.value);
+    }
+    async function loginWithMobilePassword() {
         try {
-            const { user, error } = await supabase.auth.signInWithPassword({
-                email,
-                password,
-            });
+           
+           const res = await login(email,password);
+           if(res.status==200){
+              window.location.href="/dashboard"
+           }
+           else{
+                 window.location.href="/login"
 
-            if (error) {
-                throw new Error(error.message);
-            }
-
-            // Handle successful login, e.g., redirect to dashboard
-            console.log('Logged in user:', user);
-            router.push('/dashboard');
+             
+           }
         } catch (error) {
-            console.error('Login error:', error.message);
+          alert(error.message)
         }
-    };
+      }
     return (
         <>
             <section id="login">
@@ -53,19 +51,17 @@ const Login = () => {
                                         id="form1"
                                         type="email"
                                         placeholder="Email Address"
-                                        // onChange={updateEmail}
-                                        onChange={(e) => setEmail(e.target.value)}
+                                        onChange={updateEmail}
                                     />
                                     <input
                                         className="form-control"
                                         id="form2"
                                         placeholder="Password"
-                                        // onChange={updatePassword}
-                                        onChange={(e) => setPassword(e.target.value)}
+                                        onChange={updatePassword}
                                         type="password"
                                     />
                                     <button className="login-btn "
-                                        onClick={(e) => handleLogin(e)}
+                                        onClick={loginWithMobilePassword}
                                     >
                                         Sign in
                                     </button>

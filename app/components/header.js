@@ -7,7 +7,7 @@ import logoLight from '../../public/assets/img/tb-logo-black.svg';
 import './header.css';
 import React, { useEffect, useState } from 'react';
 
-const CustomNavbar = ({ theme }) => {
+const Header = ({ theme }) => {
     const router = useRouter();
     const [activePath, setActivePath] = useState('/');
     const [scrolled, setScrolled] = useState(false);
@@ -82,4 +82,4 @@ const CustomNavbar = ({ theme }) => {
     );
 };
 
-export default CustomNavbar;
+export default Header;
