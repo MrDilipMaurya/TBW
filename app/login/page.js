@@ -29,7 +29,7 @@ const Login = () => {
 
             // Handle successful login, e.g., redirect to dashboard
             console.log('Logged in user:', user);
-            router.push('/countries');
+            router.push('/dashboard');
         } catch (error) {
             console.error('Login error:', error.message);
         }
