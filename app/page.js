@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./page.css";
+import { useEffect } from "react";
 import star from "../public/assets/img/star.svg";
 import pms from "../public/assets/img/pms.svg";
 import arrowRight from "../public/assets/img/arrow-right.svg";
@@ -17,7 +18,7 @@ import Navbar from "./components/header";
 import Footer from "./components/footer";
 import ProjectSlide from "./components/projectSlide";
 import TestimonialSlide from "./components/testimonialSlide";
-
+import { getReviews } from '../api/reviews.js';
 export default function Home() {
   const theme = "dark";
   const images = [
@@ -95,6 +96,19 @@ export default function Home() {
       link: "https://aws.amazon.com/",
     },
   ];
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    async function fetchReviews() {
+      try {
+        const reviewsData = await getReviews();
+        setReviews(reviewsData);
+      } catch (error) {
+        console.error("Error fetching reviews:", error);
+      }
+    }
+    fetchReviews();
+  }, []);
   return (
     <>
       <Navbar theme={theme} />
@@ -275,7 +289,7 @@ export default function Home() {
                   and flexible business solutions with us
                 </h3>
                 <div className="btn">
-                  <a href="/case-studies">Browse case studies</a>
+                  <a href="/case-study">Browse case studies</a>
                   <svg
                     width="24"
                     height="24"
@@ -682,7 +696,7 @@ export default function Home() {
                           by client will here. "
                     star="5"
                   />
-                </SwiperSlide>{" "}
+                </SwiperSlide>
                 <SwiperSlide>
                   <TestimonialSlide
                     clName="Dilip Kumar"
@@ -692,7 +706,7 @@ export default function Home() {
                           by client will here. "
                     star="3"
                   />
-                </SwiperSlide>{" "}
+                </SwiperSlide>
                 <SwiperSlide>
                   <TestimonialSlide
                     clName="Dilip Kumar"
@@ -702,7 +716,7 @@ export default function Home() {
                           by client will here. "
                     star="3"
                   />
-                </SwiperSlide>{" "}
+                </SwiperSlide>
                 <SwiperSlide>
                   <TestimonialSlide
                     clName="Dilip Kumar"

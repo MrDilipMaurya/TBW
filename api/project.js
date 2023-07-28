@@ -13,7 +13,7 @@ const getProjects = async () => {
         }
 
        data.filter((item)=>{
-            item.project_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/project/${item.project_image}`
+            item.project_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/project/${item.project_image}`
         })
         return { data };
     } catch (error) {
@@ -31,7 +31,7 @@ const createProjects = async (catdata, file = null) => {
 
         if (file) {
             const { outputPath, fileerror } = await supabase.storage
-                .from('tb_storage')
+                .from('hello')
                 .upload(`project/${file.name}`, file);
 
 
@@ -67,7 +67,7 @@ const updateProjects = async (id, catdata, file) => {
 
         if (file) {
             const { outputPath, fileerror } = await supabase.storage
-                .from('tb_storage')
+                .from('hello')
                 .upload(`project/${file.name}`, file);
 
 

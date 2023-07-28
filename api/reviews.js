@@ -13,7 +13,7 @@ const getReviews = async () => {
 
         data.filter((item) => {
             if (item.image != null) {
-                item.image = `https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/reviews/${item.image}`
+                item.image = `https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/reviews/${item.image}`
 
             }
         })
@@ -32,7 +32,7 @@ const createReviews = async (catdata, image = null) => {
         catdata.image = null;
         if (image) {
             const { outputPath, fileerror } = await supabase.storage
-                .from('tb_storage')
+                .from('hello')
                 .upload(`reviews/${image.name}`,image);
 
 
@@ -66,7 +66,7 @@ const updateReviews = async (id, catdata, image = null) => {
         catdata.image = null;
         if (image) {
             const { outputPath, fileerror } = await supabase.storage
-                .from('tb_storage')
+                .from('hello')
                 .upload(`reviews/${image.name}`, image);
 
 

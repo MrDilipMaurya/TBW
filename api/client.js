@@ -13,7 +13,7 @@ const getClients = async () => {
         }
 
        data.filter((item)=>{
-            item.client_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/client/${item.client_image}`
+            item.client_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/client/${item.client_image}`
         })
         return { data };
     } catch (error) {
@@ -32,7 +32,7 @@ var catdata = {client_image:'',order:''};
       
         if (file) {
             const { outputPath, fileerror } = await supabase.storage
-                .from('tb_storage')
+                .from('hello')
                 .upload(`client/${file.name}`, file);
 
 
@@ -72,7 +72,7 @@ const updateClients = async (id,orderNum,file) => {
             var catdata = {client_image:'',order:''};
 
             const { outputPath, fileerror } = await supabase.storage
-                .from('tb_storage')
+                .from('hello')
                 .upload(`client/${file.name}`, file);
 
 

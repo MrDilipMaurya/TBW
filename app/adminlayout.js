@@ -25,7 +25,6 @@ export default function Layout({ children }) {
   React.useEffect(() => {
     if (!isLoggedIn) {
       window.location.href = '/login';
-
     }
   }, [isLoggedIn]);
 
@@ -57,13 +56,7 @@ export default function Layout({ children }) {
             <Header></Header>
             <main>{children}</main>
           </div>
-          <footer className="sticky-footer bg-white">
-            <div className="container my-auto">
-              <div className="copyright text-center my-auto">
-                <span>Copyright © Your Website 2021</span>
-              </div>
-            </div>
-          </footer>
+      <Footer></Footer>
           <script src="vendor/jquery/jquery.min.js"></script>
           <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
           <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

@@ -42,7 +42,7 @@ const Header = ({ theme }) => {
 
     }, 'fixed-top');
 
-    const scroll = classnames({
+    const scroll = classnames('mainHeader',{
         'scrolled': scrolled,
     })
     const logoImage = theme === 'dark' ? logoDark : logoLight;

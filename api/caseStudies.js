@@ -17,16 +17,16 @@ const getCaseStudies = async () => {
 
         data.filter((item)=>{
             if(item.banner_image){
-                item.banner_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.banner_image}`
+                item.banner_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.banner_image}`
             }
             if(item.banner_image_logo){
-                item.banner_image_logo=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.banner_image_logo}`
+                item.banner_image_logo=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.banner_image_logo}`
             }
             if(item.middle_banner){
-                item.middle_banner=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.middle_banner}`
+                item.middle_banner=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.middle_banner}`
             }
             if(item.thumbnail){
-                item.thumbnail=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.thumbnail}`
+                item.thumbnail=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.thumbnail}`
             }
 
         })
@@ -47,19 +47,19 @@ const createCaseStudies = async (catdata,banner_image=null,banner_image_logo=nul
         catdata.middle_banner=null;
         catdata.thumbnail=null;
         if(banner_image){
-            const { banner_image_data, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${banner_image.name}`, banner_image);
+            const { banner_image_data, error } = await supabase.storage.from('hello').upload(`case_studies/${banner_image.name}`, banner_image);
              catdata.banner_image=banner_image.name
         }
         if(banner_image_logo){
-            const { banner_image_logo_data, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${banner_image_logo.name}`, banner_image_logo);
+            const { banner_image_logo_data, error } = await supabase.storage.from('hello').upload(`case_studies/${banner_image_logo.name}`, banner_image_logo);
              catdata.banner_image_logo=banner_image_logo.name
         }
         if(middle_banner){
-            const { middle_banner_data, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${middle_banner.name}`, middle_banner);
+            const { middle_banner_data, error } = await supabase.storage.from('hello').upload(`case_studies/${middle_banner.name}`, middle_banner);
              catdata.middle_banner=middle_banner.name
         }
         if(thumbnail){
-            const { thumbnail, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${thumbnail.name}`, thumbnail);
+            const { thumbnail, error } = await supabase.storage.from('hello').upload(`case_studies/${thumbnail.name}`, thumbnail);
              catdata.thumbnail=thumbnail.name
         }
         const { data, error } = await supabase
@@ -84,19 +84,19 @@ const updateCaseStudies = async (id, catdata,banner_image=null,banner_image_logo
     try {
 
         if(banner_image){
-            const { banner_image_data, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${banner_image.name}`, banner_image);
+            const { banner_image_data, error } = await supabase.storage.from('hello').upload(`case_studies/${banner_image.name}`, banner_image);
              catdata.banner_image=banner_image.name
         }
         if(banner_image_logo){
-            const { banner_image_logo_data, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${banner_image_logo.name}`, banner_image_logo);
+            const { banner_image_logo_data, error } = await supabase.storage.from('hello').upload(`case_studies/${banner_image_logo.name}`, banner_image_logo);
              catdata.banner_image_logo=banner_image_logo.name
         }
         if(middle_banner){
-            const { middle_banner_data, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${middle_banner.name}`, middle_banner);
+            const { middle_banner_data, error } = await supabase.storage.from('hello').upload(`case_studies/${middle_banner.name}`, middle_banner);
              catdata.middle_banner=middle_banner.name
         }
         if(thumbnail){
-            const { thumbnail_data, error } = await supabase.storage.from('tb_storage').upload(`case_studies/${thumbnail.name}`, thumbnail);
+            const { thumbnail_data, error } = await supabase.storage.from('hello').upload(`case_studies/${thumbnail.name}`, thumbnail);
              catdata.thumbnail=thumbnail.name
         }
         const { data, error } = await supabase
@@ -135,16 +135,16 @@ const editCaseStudies = async (id) => {
 
          data.filter((item)=>{
             if(item.banner_image){
-                item.banner_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.banner_image}`
+                item.banner_image=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.banner_image}`
             }
             if(item.banner_image_logo){
-                item.banner_image_logo=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.banner_image_logo}`
+                item.banner_image_logo=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.banner_image_logo}`
             }
             if(item.middle_banner){
-                item.middle_banner=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.middle_banner}`
+                item.middle_banner=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.middle_banner}`
             }
             if(item.thumbnail){
-                item.thumbnail=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/case_studies/${item.thumbnail}`
+                item.thumbnail=`https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/case_studies/${item.thumbnail}`
             }
 
         })

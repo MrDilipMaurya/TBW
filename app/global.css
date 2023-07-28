@@ -13,15 +13,15 @@ body {
 
 
 
-nav.navbar-light{
+ nav.navbar-light{
     background-color: #ffffff;
   }
   
 
-  .nav-link:first-child{
+  .mainHeader  .nav-link:first-child{
     margin-left: 81px;
   }
-  .nav-link{
+  .mainHeader  .nav-link{
     padding:0 !important;
     margin-right: 45px;
     /* margin:0 45px; */
@@ -33,11 +33,11 @@ nav.navbar-light{
 
 
 
-  .navbar-light .nav-link{
+  .mainHeader  .navbar-light .nav-link{
     color: #000;
   }
 
-  .navbar-light button .nav-link{
+  .mainHeader .navbar-light button .nav-link{
     color: #fff;
   }
   
@@ -52,6 +52,6 @@ nav.navbar-light{
    
   }
 
-  button .nav-link:first-child{
+  .mainHeader button .nav-link:first-child{
     margin: 0;
    }

@@ -10,7 +10,7 @@ const getIsContactReview = async () => {
 
             data.filter((item) => {
                 if (item.image != null) {
-                    item.image = `https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/reviews/${item.image}`
+                    item.image = `https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/reviews/${item.image}`
                 }
             })
         if (error) {

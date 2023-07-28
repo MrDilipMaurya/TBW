@@ -13,7 +13,7 @@ const getProjectUnderProjectCategory = async (projectCategory) => {
         }
 
         data.filter((item) => {
-            item.project_image = `https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/tbw_storage/project/${item.project_image}`
+            item.project_image = `https://anyijxohgwdjjomafoml.supabase.co/storage/v1/object/public/hello/project/${item.project_image}`
         })
         return { data };
     } catch (error) {
